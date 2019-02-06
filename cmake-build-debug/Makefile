@@ -2121,6 +2121,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/main.c.s
 .PHONY : main.c.s
 
+matrix_creation.o: matrix_creation.c.o
+
+.PHONY : matrix_creation.o
+
+# target to build an object file
+matrix_creation.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/matrix_creation.c.o
+.PHONY : matrix_creation.c.o
+
+matrix_creation.i: matrix_creation.c.i
+
+.PHONY : matrix_creation.i
+
+# target to preprocess a source file
+matrix_creation.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/matrix_creation.c.i
+.PHONY : matrix_creation.c.i
+
+matrix_creation.s: matrix_creation.c.s
+
+.PHONY : matrix_creation.s
+
+# target to generate assembly for a file
+matrix_creation.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/matrix_creation.c.s
+.PHONY : matrix_creation.c.s
+
 print_float.o: print_float.c.o
 
 .PHONY : print_float.o
@@ -2568,6 +2595,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... matrix_creation.o"
+	@echo "... matrix_creation.i"
+	@echo "... matrix_creation.s"
 	@echo "... print_float.o"
 	@echo "... print_float.i"
 	@echo "... print_float.s"

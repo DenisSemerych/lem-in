@@ -107,7 +107,7 @@ void    validate(t_list *map)
     t_list *ants;
     t_list *rooms;
     t_list *links;
-    t_list *start_room;
+    t_list *hash_table;
 
     if ((num_of_ants = ft_atoi(map->content)) <= 0)
         put_err_msg_exit("Error: incorrect number of ants");
@@ -118,5 +118,6 @@ void    validate(t_list *map)
     if (!links)
         put_err_msg_exit("Error: there is no links beetween rooms");
     ants = create_ants(num_of_ants, check_rooms(rooms));
+
     create_matrix(rooms, links);
 }

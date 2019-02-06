@@ -64,3 +64,16 @@ int						spec_atoi(const char *str)
     }
     return ((int)(num));
 }
+
+int         list_count(t_list *list)
+{
+    int count;
+
+    count = 0;
+    while(list)
+    {
+        count++;
+        list = list->next;
+    }
+    return (count);
+}

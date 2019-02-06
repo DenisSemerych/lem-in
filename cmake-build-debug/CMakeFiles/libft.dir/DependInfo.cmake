@@ -78,6 +78,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dsemeryc/CLionProjects/libft/libft/get_next_line.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/libft/get_next_line.c.o"
   "/Users/dsemeryc/CLionProjects/libft/lists_creation.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/lists_creation.c.o"
   "/Users/dsemeryc/CLionProjects/libft/main.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/main.c.o"
+  "/Users/dsemeryc/CLionProjects/libft/matrix_creation.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/matrix_creation.c.o"
   "/Users/dsemeryc/CLionProjects/libft/print_float.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/print_float.c.o"
   "/Users/dsemeryc/CLionProjects/libft/print_float_add.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/print_float_add.c.o"
   "/Users/dsemeryc/CLionProjects/libft/print_int.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/print_int.c.o"
