@@ -1,0 +1,96 @@
+cmake_minimum_required(VERSION 3.13)
+project(libft C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(.)
+include_directories(includes)
+include_directories(libft)
+
+add_executable(libft
+        includes/libft.h
+        includes/printf.h
+        libft/ft_atoi.c
+        libft/ft_bzero.c
+        libft/ft_insertion.c
+        libft/ft_isalnum.c
+        libft/ft_isalpha.c
+        libft/ft_isascii.c
+        libft/ft_isdigit.c
+        libft/ft_isprint.c
+        libft/ft_itoa.c
+        libft/ft_lstadd.c
+        libft/ft_lstaddend.c
+        libft/ft_lstdel.c
+        libft/ft_lstdelone.c
+        libft/ft_lstiter.c
+        libft/ft_lstmap.c
+        libft/ft_lstnew.c
+        libft/ft_memalloc.c
+        libft/ft_memccpy.c
+        libft/ft_memchr.c
+        libft/ft_memcmp.c
+        libft/ft_memcpy.c
+        libft/ft_memdel.c
+        libft/ft_memmove.c
+        libft/ft_memset.c
+        libft/ft_pow.c
+        libft/ft_print_bits.c
+        libft/ft_print_memory.c
+        libft/ft_putchar.c
+        libft/ft_putchar_fd.c
+        libft/ft_putendl.c
+        libft/ft_putendl_fd.c
+        libft/ft_putnbr.c
+        libft/ft_putnbr_fd.c
+        libft/ft_putstr.c
+        libft/ft_putstr_fd.c
+        libft/ft_reversebits.c
+        libft/ft_strcat.c
+        libft/ft_strchr.c
+        libft/ft_strclr.c
+        libft/ft_strcmp.c
+        libft/ft_strcpy.c
+        libft/ft_strdel.c
+        libft/ft_strdup.c
+        libft/ft_strequ.c
+        libft/ft_striter.c
+        libft/ft_striteri.c
+        libft/ft_strjoin.c
+        libft/ft_strlcat.c
+        libft/ft_strlen.c
+        libft/ft_strmap.c
+        libft/ft_strmapi.c
+        libft/ft_strncat.c
+        libft/ft_strncmp.c
+        libft/ft_strncpy.c
+        libft/ft_strnequ.c
+        libft/ft_strnew.c
+        libft/ft_strnstr.c
+        libft/ft_strrchr.c
+        libft/ft_strsplit.c
+        libft/ft_strstr.c
+        libft/ft_strsub.c
+        libft/ft_strtrim.c
+        libft/ft_tolower.c
+        libft/ft_toupper.c
+        libft/get_next_line.c
+        libft/get_next_line.h
+        libft/libft.h
+        add_func.c
+        formating.c
+        formating_2.c
+        ft_itoa_int128.c
+        ft_printf.c
+        itoa_base_long.c
+        itoa_base_ull.c
+        includes/libft.h
+        main.c
+        print_float.c
+        print_float_add.c
+        print_int.c
+        printf.h
+        service_functions.c
+        service_functions2.c
+        stack_func.c
+        stack_func_2.c lem_in.h validation.c "lists_creation.c")
