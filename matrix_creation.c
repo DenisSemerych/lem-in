@@ -10,6 +10,23 @@ t_room *hash_function(t_list *hash_table, int index)
         hash_table = hash_table->next;
     }
     put_err_msg_exit("Error: something went wrong while working with hash-function");
+    return (NULL);
+}
+
+int     check_link(t_room *room, int index, t_list *hash_table, t_list *links)
+{
+    t_link *link;
+    t_room *matching_room;
+
+    matching_room = hash_function(hash_table, index);
+    while(links)
+    {
+        link = (t_link *)links->content;
+        if ((matching_room == link->r1 && room == link->r2) || (matching_room == link->r2 && room == link->r1))
+            return (1);
+        links = links->next;
+    }
+    return (0);
 }
 
 void    fill_rows(int size, int ***matrix_addr, t_list *links, t_list *hash_table)
@@ -28,7 +45,8 @@ void    fill_rows(int size, int ***matrix_addr, t_list *links, t_list *hash_tabl
         room = hash_function(hash_table, count_r);
         while (count_c < size)
         {
-            
+            matrix[count_r][count_c] = check_link(room, count_c, hash_table, links);
+            count_c++;
         }
         count_r++;
     }
@@ -49,13 +67,16 @@ t_list   *go_trough_rooms(t_list *rooms, int ***matrix_addr, int size)
     {
         room = (t_room *)rooms->content;
         if (room->is_start && !(added = 0))
-            matrix[0] = (int *)malloc(size);
+            matrix[0] = (int *)malloc(sizeof(int) * size);
         else if (room->is_end && (added = size - 1))
-            matrix[size - 1] = (int *)malloc(size);
-        else if ((added = index))
-            matrix[index++] = (int *)malloc(size);
+            matrix[size - 1] = (int *)malloc(sizeof(int) * size);
+        else
+        {
+            added = index;
+            matrix[index++] = (int *)malloc(sizeof(int) * size);
+        }
         ft_lstadd(&hash_table, ft_lstnew(NULL, 0));
-        hash_table->content = rooms;
+        hash_table->content = room;
         hash_table->content_size = added;
         rooms = rooms->next;
     }
@@ -70,10 +91,10 @@ void    create_matrix(t_list *rooms, t_list *links)
     int size;
 
     size = list_count(rooms);
-    matrix = (int **) malloc(size);
+    matrix = (int **) malloc((sizeof(int) * size) * size);
     hash_table = go_trough_rooms(rooms, &matrix, size);
-    int i = 0;
     fill_rows(size, &matrix, links, hash_table);
+    int i = 0;
     while (i < size)
     {
         int j = 0;

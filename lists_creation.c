@@ -21,7 +21,7 @@ void    add_rooms_and_links(t_list *map, t_list **links, t_list **rooms)
             ;
         else
         {
-            *rooms = validate_room(map->content, *rooms, start_end);
+            *rooms = validate_room(map->content, *rooms, start_end, *links);
             start_end ? (start_end = 0) : start_end;
         }
         map = map->next;
@@ -47,13 +47,13 @@ t_list *create_ants(int num_of_ants, t_list *start_room)
     return (head);
 }
 
-t_link *create_link(char *name_one, char *name_two)
+t_link *create_link(t_room *room_one, t_room *room_two)
 {
     t_link *link;
 
     link = (t_link *)malloc(sizeof(t_link));
-    link->r1 = name_one;
-    link->r2 = name_two;
+    link->r1 = room_one;
+    link->r2 = room_two;
     return (link);
 }
 t_room *create_room(char *name, int x, int y, int start_end)

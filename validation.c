@@ -15,7 +15,9 @@ void    print_list(t_list *rooms, t_list *links, t_list *ants)
     while (links)
     {
         t_link *link = (t_link *)links->content;
-        printf("%s room one linked with %s room two\n", link->r1, link->r2);
+        t_room *room1 = link->r1;
+        t_room *room2 = link->r2;
+        printf("%s room one linked with %s room two\n", room1->name, room2->name);
         links = links->next;
     }
     while (ants)
@@ -29,14 +31,14 @@ void    print_list(t_list *rooms, t_list *links, t_list *ants)
 }
 
 
-t_list *validate_room(char *str, t_list *head, int start_end)
+t_list *validate_room(char *str, t_list *head, int start_end, t_list *links)
 {
     char **info;
     t_room *room;
 
     info = ft_strsplit(str, ' ');
     if (count_size(info) != 3 || spec_atoi(info[1]) < 0 || spec_atoi(info[2]) < 0 ||
-    info[0][0] == 'L' || info[0][0] == '#' || info[0][0] == '\0')
+    info[0][0] == 'L' || info[0][0] == '#' || info[0][0] == '\0' || links)
         put_err_msg_exit("Error: one of the rooms is invalid");
     room = create_room(info[0], spec_atoi(info[1]), spec_atoi(info[2]), start_end);
     head = add_to_the_end_of_list(head, ft_lstnew(room, sizeof(*room)));
@@ -46,29 +48,29 @@ t_list *validate_room(char *str, t_list *head, int start_end)
 t_list *validate_link(char *str, t_list *head, t_list *rooms)
 {
     char **info;
-    int  chk_f;
-    int  chk_s;
+    t_room *room_one;
+    t_room *room_two;
     t_link *link;
     t_room *room;
 
     info = ft_strsplit(str, '-');
     if (count_size(info) != 2)
-        put_err_msg_exit("Error: one of the rooms is invalid");
-    chk_f = 0;
-    chk_s = 0;
+        put_err_msg_exit("Error: one of the links is invalid");
+    room_one = NULL;
+    room_two = NULL;
     while (rooms)
     {
         room = (t_room *)(rooms->content);
         if (!ft_strcmp(room->name, info[0]))
-            chk_f++;
+            room_one = room;
         else if (!ft_strcmp(room->name, info[1]))
-            chk_s++;
+            room_two = room;
         rooms = rooms->next;
     }
-    if (!chk_f || !chk_s)
+    if (!room_two || !room_one)
         put_err_msg_exit("Error: one of the links is invalid");
-    link = create_link(info[0], info[1]);
-    head = add_to_the_end_of_list(head, ft_lstnew(link, sizeof(*link)));
+    link = create_link(room_one, room_two);
+    head = add_to_the_end_of_list(head, ft_lstnew(link, sizeof(t_link)));
     return (head);
 }
 
@@ -118,6 +120,6 @@ void    validate(t_list *map)
     if (!links)
         put_err_msg_exit("Error: there is no links beetween rooms");
     ants = create_ants(num_of_ants, check_rooms(rooms));
-
+    print_list(rooms, links, ants);
     create_matrix(rooms, links);
 }
