@@ -256,6 +256,11 @@ CMakeFiles/libft.dir/print_int.c.o
  /Users/dsemeryc/CLionProjects/libft/includes/libft.h
  /Users/dsemeryc/CLionProjects/libft/includes/printf.h
  /Users/dsemeryc/CLionProjects/libft/print_int.c
+CMakeFiles/libft.dir/queue_functions.c.o
+ ../includes/libft.h
+ /Users/dsemeryc/CLionProjects/libft/lem_in.h
+ /Users/dsemeryc/CLionProjects/libft/printf.h
+ /Users/dsemeryc/CLionProjects/libft/queue_functions.c
 CMakeFiles/libft.dir/service_functions.c.o
  /Users/dsemeryc/CLionProjects/libft/includes/libft.h
  /Users/dsemeryc/CLionProjects/libft/includes/printf.h

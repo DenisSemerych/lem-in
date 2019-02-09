@@ -1,23 +1,12 @@
 #include "lem_in.h"
 
-t_room *hash_function(t_list *hash_table, int index, t_room *room)
+t_room *hash_function(t_list *hash_table, int index)
 {
-    if (index)
+    while(hash_table)
     {
-        while(hash_table)
-        {
-            if (index == hash_table->content_size)
-                return ((t_room *)hash_table->content);
-            hash_table = hash_table->next;
-        }
-    }
-    if (room)
-    {
-        while(hash_table)
-        {
-            if (room == hash_table->content)
-                return ()
-        }
+        if (index == hash_table->content_size)
+            return ((t_room *)hash_table->content);
+        hash_table = hash_table->next;
     }
     put_err_msg_exit("Error: something went wrong while working with hash-function");
     return (NULL);
@@ -55,7 +44,7 @@ void    fill_rows(int size, int ***matrix_addr, t_list *links, t_list *hash_tabl
         room = hash_function(hash_table, count_r);
         while (count_c < size)
         {
-            matrix[count_r][count_c] = check_link(room, count_c, hash_table, links);
+            matrix[count_r][count_c] = count_c <= count_r ? 0 : check_link(room, count_c, hash_table, links);
             count_c++;
         }
         count_r++;
@@ -105,7 +94,6 @@ void    create_matrix(t_list *rooms, t_list *links, t_list *ants)
     matrix = (int **) malloc((sizeof(int) * size) * size);
     hash_table = go_trough_rooms(rooms, &matrix, size);
     fill_rows(size, &matrix, links, hash_table);
-    paths = search_paths(matrix, list_count(ants), hash_table, size);
     int i = 0;
     while (i < size)
     {
@@ -118,4 +106,5 @@ void    create_matrix(t_list *rooms, t_list *links, t_list *ants)
         ft_printf("\n");
         i++;
     }
+    paths = search_paths(matrix, list_count(ants), hash_table, size);
 }

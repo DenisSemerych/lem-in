@@ -35,4 +35,6 @@ t_list  *go_trough_rooms(t_list *rooms, int ***matrix_addr, int size);
 t_list *search_paths(int **matrix, int number_of_ants, t_list *hash_table, int size);
 t_room *hash_function(t_list *hash_table, int index);
 t_list *last_elem(t_list *head);
+t_room *reverse_hash_function(int index, t_list *hash_table);
+void    del_last(t_list **head);
 #endif

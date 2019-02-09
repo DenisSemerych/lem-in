@@ -256,6 +256,11 @@ CMakeFiles/libft.dir/print_int.c.o: ../includes/libft.h
 CMakeFiles/libft.dir/print_int.c.o: ../includes/printf.h
 CMakeFiles/libft.dir/print_int.c.o: ../print_int.c
 
+CMakeFiles/libft.dir/queue_functions.c.o: ../includes/libft.h
+CMakeFiles/libft.dir/queue_functions.c.o: ../lem_in.h
+CMakeFiles/libft.dir/queue_functions.c.o: ../printf.h
+CMakeFiles/libft.dir/queue_functions.c.o: ../queue_functions.c
+
 CMakeFiles/libft.dir/service_functions.c.o: ../includes/libft.h
 CMakeFiles/libft.dir/service_functions.c.o: ../includes/printf.h
 CMakeFiles/libft.dir/service_functions.c.o: ../service_functions.c
