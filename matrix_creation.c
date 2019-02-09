@@ -1,13 +1,23 @@
-#include <strhash.h>
 #include "lem_in.h"
 
-t_room *hash_function(t_list *hash_table, int index)
+t_room *hash_function(t_list *hash_table, int index, t_room *room)
 {
-    while(hash_table)
+    if (index)
     {
-        if (index == hash_table->content_size)
-            return ((t_room *)hash_table->content);
-        hash_table = hash_table->next;
+        while(hash_table)
+        {
+            if (index == hash_table->content_size)
+                return ((t_room *)hash_table->content);
+            hash_table = hash_table->next;
+        }
+    }
+    if (room)
+    {
+        while(hash_table)
+        {
+            if (room == hash_table->content)
+                return ()
+        }
     }
     put_err_msg_exit("Error: something went wrong while working with hash-function");
     return (NULL);
@@ -83,17 +93,19 @@ t_list   *go_trough_rooms(t_list *rooms, int ***matrix_addr, int size)
     return (hash_table);
 }
 
-void    create_matrix(t_list *rooms, t_list *links)
+void    create_matrix(t_list *rooms, t_list *links, t_list *ants)
 {
     int **matrix;
     t_list *hash_table;
     t_room *room;
     int size;
+    t_list *paths;
 
     size = list_count(rooms);
     matrix = (int **) malloc((sizeof(int) * size) * size);
     hash_table = go_trough_rooms(rooms, &matrix, size);
     fill_rows(size, &matrix, links, hash_table);
+    paths = search_paths(matrix, list_count(ants), hash_table, size);
     int i = 0;
     while (i < size)
     {

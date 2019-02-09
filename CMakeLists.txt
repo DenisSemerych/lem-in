@@ -93,4 +93,4 @@ add_executable(libft
         service_functions.c
         service_functions2.c
         stack_func.c
-        stack_func_2.c lem_in.h validation.c "lists_creation.c" matrix_creation.c)
+        stack_func_2.c lem_in.h validation.c "lists_creation.c" matrix_creation.c algorithm.c queue_functions.c)

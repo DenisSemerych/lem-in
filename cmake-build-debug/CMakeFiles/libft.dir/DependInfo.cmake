@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/dsemeryc/CLionProjects/libft/add_func.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/add_func.c.o"
+  "/Users/dsemeryc/CLionProjects/libft/algorithm.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/algorithm.c.o"
   "/Users/dsemeryc/CLionProjects/libft/formating.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/formating.c.o"
   "/Users/dsemeryc/CLionProjects/libft/formating_2.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/formating_2.c.o"
   "/Users/dsemeryc/CLionProjects/libft/ft_itoa_int128.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/ft_itoa_int128.c.o"
@@ -82,6 +83,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dsemeryc/CLionProjects/libft/print_float.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/print_float.c.o"
   "/Users/dsemeryc/CLionProjects/libft/print_float_add.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/print_float_add.c.o"
   "/Users/dsemeryc/CLionProjects/libft/print_int.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/print_int.c.o"
+  "/Users/dsemeryc/CLionProjects/libft/queue_functions.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/queue_functions.c.o"
   "/Users/dsemeryc/CLionProjects/libft/service_functions.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/service_functions.c.o"
   "/Users/dsemeryc/CLionProjects/libft/service_functions2.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/service_functions2.c.o"
   "/Users/dsemeryc/CLionProjects/libft/stack_func.c" "/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles/libft.dir/stack_func.c.o"

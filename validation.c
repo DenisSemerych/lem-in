@@ -121,5 +121,5 @@ void    validate(t_list *map)
         put_err_msg_exit("Error: there is no links beetween rooms");
     ants = create_ants(num_of_ants, check_rooms(rooms));
     print_list(rooms, links, ants);
-    create_matrix(rooms, links);
+    create_matrix(rooms, links, ants);
 }

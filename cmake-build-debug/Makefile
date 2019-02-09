@@ -150,6 +150,33 @@ add_func.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/add_func.c.s
 .PHONY : add_func.c.s
 
+algorithm.o: algorithm.c.o
+
+.PHONY : algorithm.o
+
+# target to build an object file
+algorithm.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/algorithm.c.o
+.PHONY : algorithm.c.o
+
+algorithm.i: algorithm.c.i
+
+.PHONY : algorithm.i
+
+# target to preprocess a source file
+algorithm.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/algorithm.c.i
+.PHONY : algorithm.c.i
+
+algorithm.s: algorithm.c.s
+
+.PHONY : algorithm.s
+
+# target to generate assembly for a file
+algorithm.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/algorithm.c.s
+.PHONY : algorithm.c.s
+
 formating.o: formating.c.o
 
 .PHONY : formating.o
@@ -2229,6 +2256,33 @@ print_int.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/print_int.c.s
 .PHONY : print_int.c.s
 
+queue_functions.o: queue_functions.c.o
+
+.PHONY : queue_functions.o
+
+# target to build an object file
+queue_functions.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/queue_functions.c.o
+.PHONY : queue_functions.c.o
+
+queue_functions.i: queue_functions.c.i
+
+.PHONY : queue_functions.i
+
+# target to preprocess a source file
+queue_functions.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/queue_functions.c.i
+.PHONY : queue_functions.c.i
+
+queue_functions.s: queue_functions.c.s
+
+.PHONY : queue_functions.s
+
+# target to generate assembly for a file
+queue_functions.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/queue_functions.c.s
+.PHONY : queue_functions.c.s
+
 service_functions.o: service_functions.c.o
 
 .PHONY : service_functions.o
@@ -2376,6 +2430,9 @@ help:
 	@echo "... add_func.o"
 	@echo "... add_func.i"
 	@echo "... add_func.s"
+	@echo "... algorithm.o"
+	@echo "... algorithm.i"
+	@echo "... algorithm.s"
 	@echo "... formating.o"
 	@echo "... formating.i"
 	@echo "... formating.s"
@@ -2607,6 +2664,9 @@ help:
 	@echo "... print_int.o"
 	@echo "... print_int.i"
 	@echo "... print_int.s"
+	@echo "... queue_functions.o"
+	@echo "... queue_functions.i"
+	@echo "... queue_functions.s"
 	@echo "... service_functions.o"
 	@echo "... service_functions.i"
 	@echo "... service_functions.s"

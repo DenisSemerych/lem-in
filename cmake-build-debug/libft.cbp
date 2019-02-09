@@ -89,6 +89,9 @@
 		<Unit filename="/Users/dsemeryc/CLionProjects/libft/add_func.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/algorithm.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/dsemeryc/CLionProjects/libft/formating.c">
 			<Option target="libft"/>
 		</Unit>
@@ -336,6 +339,9 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/dsemeryc/CLionProjects/libft/printf.h">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/queue_functions.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/dsemeryc/CLionProjects/libft/service_functions.c">
