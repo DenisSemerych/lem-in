@@ -22,13 +22,13 @@ printf.h
 libft.h
 /Users/dsemeryc/CLionProjects/libft/libft.h
 
-/Users/dsemeryc/CLionProjects/libft/matrix_creation.c
-lem_in.h
-/Users/dsemeryc/CLionProjects/libft/lem_in.h
-
 /Users/dsemeryc/CLionProjects/libft/printf.h
 stdarg.h
 -
 libft.h
 /Users/dsemeryc/CLionProjects/libft/libft.h
+
+/Users/dsemeryc/CLionProjects/libft/queue_functions.c
+lem_in.h
+/Users/dsemeryc/CLionProjects/libft/lem_in.h
 

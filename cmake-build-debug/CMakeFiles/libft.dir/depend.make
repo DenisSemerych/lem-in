@@ -4,10 +4,7 @@
 CMakeFiles/libft.dir/add_func.c.o: ../add_func.c
 CMakeFiles/libft.dir/add_func.c.o: ../includes/libft.h
 
-CMakeFiles/libft.dir/algorithm.c.o: ../includes/libft.h
 CMakeFiles/libft.dir/algorithm.c.o: ../algorithm.c
-CMakeFiles/libft.dir/algorithm.c.o: ../lem_in.h
-CMakeFiles/libft.dir/algorithm.c.o: ../printf.h
 
 CMakeFiles/libft.dir/formating.c.o: ../formating.c
 CMakeFiles/libft.dir/formating.c.o: ../includes/libft.h
@@ -239,10 +236,7 @@ CMakeFiles/libft.dir/main.c.o: ../lem_in.h
 CMakeFiles/libft.dir/main.c.o: ../main.c
 CMakeFiles/libft.dir/main.c.o: ../printf.h
 
-CMakeFiles/libft.dir/matrix_creation.c.o: ../includes/libft.h
-CMakeFiles/libft.dir/matrix_creation.c.o: ../lem_in.h
 CMakeFiles/libft.dir/matrix_creation.c.o: ../matrix_creation.c
-CMakeFiles/libft.dir/matrix_creation.c.o: ../printf.h
 
 CMakeFiles/libft.dir/print_float.c.o: ../includes/libft.h
 CMakeFiles/libft.dir/print_float.c.o: ../includes/printf.h

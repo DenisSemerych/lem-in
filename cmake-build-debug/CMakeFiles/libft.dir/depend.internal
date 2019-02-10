@@ -5,10 +5,7 @@ CMakeFiles/libft.dir/add_func.c.o
  /Users/dsemeryc/CLionProjects/libft/add_func.c
  /Users/dsemeryc/CLionProjects/libft/includes/libft.h
 CMakeFiles/libft.dir/algorithm.c.o
- ../includes/libft.h
  /Users/dsemeryc/CLionProjects/libft/algorithm.c
- /Users/dsemeryc/CLionProjects/libft/lem_in.h
- /Users/dsemeryc/CLionProjects/libft/printf.h
 CMakeFiles/libft.dir/formating.c.o
  /Users/dsemeryc/CLionProjects/libft/formating.c
  /Users/dsemeryc/CLionProjects/libft/includes/libft.h
@@ -240,10 +237,7 @@ CMakeFiles/libft.dir/main.c.o
  /Users/dsemeryc/CLionProjects/libft/main.c
  /Users/dsemeryc/CLionProjects/libft/printf.h
 CMakeFiles/libft.dir/matrix_creation.c.o
- ../includes/libft.h
- /Users/dsemeryc/CLionProjects/libft/lem_in.h
  /Users/dsemeryc/CLionProjects/libft/matrix_creation.c
- /Users/dsemeryc/CLionProjects/libft/printf.h
 CMakeFiles/libft.dir/print_float.c.o
  /Users/dsemeryc/CLionProjects/libft/includes/libft.h
  /Users/dsemeryc/CLionProjects/libft/includes/printf.h
