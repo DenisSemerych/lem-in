@@ -4,7 +4,10 @@
 CMakeFiles/libft.dir/add_func.c.o: ../add_func.c
 CMakeFiles/libft.dir/add_func.c.o: ../includes/libft.h
 
+CMakeFiles/libft.dir/algorithm.c.o: ../includes/libft.h
 CMakeFiles/libft.dir/algorithm.c.o: ../algorithm.c
+CMakeFiles/libft.dir/algorithm.c.o: ../lem_in.h
+CMakeFiles/libft.dir/algorithm.c.o: ../printf.h
 
 CMakeFiles/libft.dir/formating.c.o: ../formating.c
 CMakeFiles/libft.dir/formating.c.o: ../includes/libft.h

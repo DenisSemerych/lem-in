@@ -71,7 +71,7 @@ void validate_link(char *str, t_list **rooms_add)
         put_err_msg_exit("Error: one of the links is invalid");
     room_one->links = add_to_the_end_of_list(room_one->links, ft_lstnew(NULL, 0));
     last_elem(room_one->links)->content = room_two;
-    room_two->links = add_to_the_end_of_list(room_one->links, ft_lstnew(NULL, 0));
+    room_two->links = add_to_the_end_of_list(room_two->links, ft_lstnew(NULL, 0));
     last_elem(room_two->links)->content = room_one;
 }
 
