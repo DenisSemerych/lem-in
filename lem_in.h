@@ -11,6 +11,7 @@ typedef struct s_room
     t_list *links;
     int  x;
     int  y;
+    int  is_visited;
 }              t_room;
 typedef struct s_link
 {
@@ -39,4 +40,6 @@ t_room *hash_function(t_list *hash_table, int index);
 t_list *last_elem(t_list *head);
 t_room *reverse_hash_function(int index, t_list *hash_table);
 void    del_last(t_list **head);
+void algorythm(t_list **rooms);
+t_list  *bfs(t_list **rooms, t_list *path);
 #endif

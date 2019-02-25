@@ -116,18 +116,18 @@ void    validate(t_list *map)
     rooms = NULL;
     add_rooms_and_links(map, &rooms);
     ants = create_ants(num_of_ants, check_rooms(rooms));
-    while (rooms)
-    {
-        t_room *room = (t_room *)rooms->content;
-        t_list *links = room->links;
-        while (links)
-        {
-            t_room *to;
-            to = links->content;
-            ft_printf("room %s connected with room %s\n", room->name, to->name);
-            links = links->next;
-        }
-        rooms = rooms->next;
-    }
-
+//    while (rooms)
+//    {
+//        t_room *room = (t_room *)rooms->content;
+//        t_list *links = room->links;
+//        while (links)
+//        {
+//            t_room *to;
+//            to = links->content;
+//            ft_printf("room %s connected with room %s\n", room->name, to->name);
+//            links = links->next;
+//        }
+//        rooms = rooms->next;
+//    }
+    algorythm(&rooms);
 }

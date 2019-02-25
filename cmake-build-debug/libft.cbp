@@ -8,354 +8,358 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/denissemerych/lem_in/cmake-build-debug"/>
+				<Option working_dir="/Users/dsemeryc/CLionProjects/libft/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/denissemerych/lem_in/cmake-build-debug"/>
+				<Option working_dir="/Users/dsemeryc/CLionProjects/libft/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/denissemerych/lem_in/cmake-build-debug"/>
+				<Option working_dir="/Users/dsemeryc/CLionProjects/libft/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libft">
-				<Option output="/Users/denissemerych/lem_in/cmake-build-debug/libft" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/denissemerych/lem_in/cmake-build-debug"/>
+				<Option output="/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/libft" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dsemeryc/CLionProjects/libft/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/denissemerych/lem_in/."/>
-					<Add directory="/Users/denissemerych/lem_in/includes"/>
-					<Add directory="/Users/denissemerych/lem_in/libft"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Users/dsemeryc/CLionProjects/libft/."/>
+					<Add directory="/Users/dsemeryc/CLionProjects/libft/includes"/>
+					<Add directory="/Users/dsemeryc/CLionProjects/libft/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 libft"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 libft"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libft/fast">
-				<Option output="/Users/denissemerych/lem_in/cmake-build-debug/libft" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/denissemerych/lem_in/cmake-build-debug"/>
+				<Option output="/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/libft" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dsemeryc/CLionProjects/libft/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/denissemerych/lem_in/."/>
-					<Add directory="/Users/denissemerych/lem_in/includes"/>
-					<Add directory="/Users/denissemerych/lem_in/libft"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Users/dsemeryc/CLionProjects/libft/."/>
+					<Add directory="/Users/dsemeryc/CLionProjects/libft/includes"/>
+					<Add directory="/Users/dsemeryc/CLionProjects/libft/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 libft/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/denissemerych/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 libft/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/denissemerych/lem_in/add_func.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/add_func.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/algorithm.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/algorithm.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/formating.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/formating.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/formating_2.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/formating_2.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/ft_itoa_int128.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/ft_itoa_int128.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/ft_printf.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/ft_printf.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/includes/libft.h">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/includes/libft.h">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/includes/printf.h">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/includes/printf.h">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/itoa_base_long.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/itoa_base_long.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/itoa_base_ull.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/itoa_base_ull.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/lem_in.h">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/lem_in.h">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_atoi.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_atoi.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_bzero.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_bzero.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_insertion.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_insertion.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_isalnum.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_isalnum.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_isalpha.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_isalpha.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_isascii.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_isascii.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_isdigit.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_isdigit.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_isprint.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_isprint.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_itoa.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_itoa.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_lstadd.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_lstadd.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_lstaddend.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_lstaddend.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_lstdel.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_lstdel.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_lstdelone.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_lstdelone.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_lstiter.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_lstiter.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_lstmap.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_lstmap.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_lstnew.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_lstnew.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_memalloc.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_memalloc.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_memccpy.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_memccpy.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_memchr.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_memchr.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_memcmp.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_memcmp.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_memcpy.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_memcpy.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_memdel.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_memdel.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_memmove.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_memmove.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_memset.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_memset.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_pow.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_pow.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_print_bits.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_print_bits.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_print_memory.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_print_memory.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_putchar.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_putchar.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_putchar_fd.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_putendl.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_putendl.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_putendl_fd.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_putnbr.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_putnbr.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_putnbr_fd.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_putstr.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_putstr.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_putstr_fd.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_reversebits.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_reversebits.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strcat.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strcat.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strchr.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strchr.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strclr.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strclr.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strcmp.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strcmp.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strcpy.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strcpy.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strdel.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strdel.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strdup.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strdup.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strequ.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strequ.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_striter.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_striter.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_striteri.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_striteri.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strjoin.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strjoin.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strlcat.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strlcat.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strlen.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strlen.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strmap.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strmap.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strmapi.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strmapi.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strncat.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strncat.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strncmp.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strncmp.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strncpy.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strncpy.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strnequ.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strnequ.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strnew.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strnew.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strnstr.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strnstr.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strrchr.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strrchr.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strsplit.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strsplit.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strstr.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strstr.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strsub.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strsub.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_strtrim.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_strtrim.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_tolower.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_tolower.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/ft_toupper.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/ft_toupper.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/get_next_line.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/get_next_line.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/get_next_line.h">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/get_next_line.h">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/libft/libft.h">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/libft/libft.h">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/lists_creation.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/lists_creation.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/main.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/main.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/matrix_creation.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/matrix_creation.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/print_float.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/print_float.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/print_float_add.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/print_float_add.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/print_int.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/print_int.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/printf.h">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/printf.h">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/queue_functions.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/queue_functions.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/service_functions.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/service_functions.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/service_functions2.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/service_functions2.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/stack_func.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/stack_func.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/stack_func_2.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/stack_func_2.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/validation.c">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/validation.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/denissemerych/lem_in/CMakeLists.txt">
+		<Unit filename="/Users/dsemeryc/CLionProjects/libft/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
