@@ -40,6 +40,6 @@ t_room *hash_function(t_list *hash_table, int index);
 t_list *last_elem(t_list *head);
 t_room *reverse_hash_function(int index, t_list *hash_table);
 void    del_last(t_list **head);
-void algorythm(t_list **rooms);
+t_list *algorythm(t_list **rooms);
 t_list  *bfs(t_list **rooms, t_list *path);
 #endif
