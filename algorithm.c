@@ -1,13 +1,12 @@
 #include "lem_in.h"
 
-
 void    save_path(t_room *node, t_list **paths)
 {
     t_list *new;
     t_list *path;
     t_list *to_save;
 
-    while (node->from)
+    while (node)
     {
         new = ft_lstnew(NULL, 0);
         new->content = node;
@@ -19,6 +18,18 @@ void    save_path(t_room *node, t_list **paths)
     *paths = add_to_the_end_of_list(*paths, to_save);
 }
 
+t_room *roll_back(t_room *node, t_list **queue, t_list **paths)
+{
+    node = node->from;
+    node->is_visited = 0;
+    while (node->from)
+    {
+        if (add_to_queue(queue, node, paths))
+            return (node);
+        node = node->from;
+    }
+    return (NULL);
+}
 
 int   add_to_queue(t_list **queue, t_room *node, t_list **paths)
 {
@@ -44,7 +55,10 @@ int   add_to_queue(t_list **queue, t_room *node, t_list **paths)
             else
             {
                 ft_printf("add to queue %s\n", room->name);
-                *queue = add_to_the_end_of_list(*queue, each);
+                if (room->is_closed)
+                    roll_back(room, queue, paths);
+                if (!room->is_closed)
+                    *queue = add_to_the_end_of_list(*queue, each);
                 check = 1;
             }
         }
@@ -53,21 +67,7 @@ int   add_to_queue(t_list **queue, t_room *node, t_list **paths)
     return (check);
 }
 
-t_room *roll_back(t_room *node, t_list **queue, t_list **paths)
-{
-    t_list *links;
 
-    node = node->from;
-    node->is_visited = 0;
-    while (node->from)
-    {
-        node->is_visited = 0;
-        if (add_to_queue(queue, node, paths))
-            return (node);
-        node = node->from;
-    }
-    return (NULL);
-}
 
 int efficiency(t_list *paths, t_list *tmp_paths)
 {
@@ -87,7 +87,7 @@ int efficiency(t_list *paths, t_list *tmp_paths)
         ft_printf("\n");
         tmp_paths = tmp_paths->next;
     }
-    return (0);
+    return (1);
 }
 
 t_list *algorythm(t_list **rooms)
@@ -102,20 +102,22 @@ t_list *algorythm(t_list **rooms)
     return (paths);
 }
 
-
-
-
 t_list *give_start_room(t_list **rooms)
 {
     t_list *crawler;
     t_room *room;
+    t_list *new;
 
     crawler = *rooms;
     while(crawler)
     {
         room = (t_room *)crawler->content;
         if (room->is_start)
-            return (crawler);
+        {
+            new = ft_lstnew(NULL, 0);
+            new->content = crawler->content;
+            return (new);
+        }
         crawler = crawler->next;
     }
     return (NULL);
@@ -128,6 +130,7 @@ t_room *contains(t_list **paths, t_room *node, t_list **queue)
     t_room *room;
 
     crawler = *paths;
+
     while (crawler)
     {
         path = crawler->content;
@@ -143,7 +146,29 @@ t_room *contains(t_list **paths, t_room *node, t_list **queue)
     return (NULL);
 }
 
-void clear_rooms(t_list **rooms)
+int contains_int(t_list *path, t_room *node)
+{
+    t_list *crawler;
+    t_room *room;
+
+    crawler = path;
+    while (crawler)
+    {
+        path = crawler->content;
+        while (path)
+        {
+            room = path->content;
+            if (room == node)
+                return (1);
+            path = path->next;
+        }
+        crawler = crawler->next;
+    }
+    return (0);
+}
+
+
+void clear_rooms(t_list **rooms, t_list *path)
 {
     t_list *crawler;
     t_room *room;
@@ -152,8 +177,9 @@ void clear_rooms(t_list **rooms)
     while (crawler)
     {
         room = crawler->content;
+        if (contains_int(path, room) && !room->is_start && !room->is_end)
+            room->is_closed = 1;
         room->is_visited = 0;
-        room->from = NULL;
         crawler = crawler->next;
     }
 }
@@ -166,20 +192,17 @@ t_list  *bfs(t_list **rooms, t_list *paths)
     t_list *new_paths;
 
     queue = give_start_room(rooms);
-    queue->next = NULL;
     new_paths = NULL;
     while(queue)
     {
         node = (t_room *)queue->content;
         queue = queue->next;
-        if ((from = contains(&paths, node, &queue)))
-            add_to_queue(&queue, from, &new_paths);
-        if (node->is_end)
-            save_path(node, &new_paths);
+        if (!node->is_start && (from = contains(&paths, node, &queue)))
+            add_to_queue(&queue, from, &new_paths);  
         else
             add_to_queue(&queue, node, &new_paths);
     }
-    clear_rooms(rooms);
+    clear_rooms(rooms, new_paths);
     return (new_paths);
 }
 

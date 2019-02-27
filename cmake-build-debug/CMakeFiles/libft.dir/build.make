@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000rfm00063n/T/AppTranslocation/FFF64E32-AE75-4B87-A990-0FCD933D9F0F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0000rfm00063n/T/AppTranslocation/FFF64E32-AE75-4B87-A990-0FCD933D9F0F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -915,9 +915,22 @@ CMakeFiles/libft.dir/add_func.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/add_func.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/add_func.c -o CMakeFiles/libft.dir/add_func.c.s
 
+CMakeFiles/libft.dir/algorithm.c.o: CMakeFiles/libft.dir/flags.make
+CMakeFiles/libft.dir/algorithm.c.o: ../algorithm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/libft.dir/algorithm.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/algorithm.c.o   -c /Users/dsemeryc/CLionProjects/libft/algorithm.c
+
+CMakeFiles/libft.dir/algorithm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/algorithm.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/CLionProjects/libft/algorithm.c > CMakeFiles/libft.dir/algorithm.c.i
+
+CMakeFiles/libft.dir/algorithm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/algorithm.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/algorithm.c -o CMakeFiles/libft.dir/algorithm.c.s
+
 CMakeFiles/libft.dir/formating.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/formating.c.o: ../formating.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/libft.dir/formating.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/libft.dir/formating.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/formating.c.o   -c /Users/dsemeryc/CLionProjects/libft/formating.c
 
 CMakeFiles/libft.dir/formating.c.i: cmake_force
@@ -930,7 +943,7 @@ CMakeFiles/libft.dir/formating.c.s: cmake_force
 
 CMakeFiles/libft.dir/formating_2.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/formating_2.c.o: ../formating_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/libft.dir/formating_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/libft.dir/formating_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/formating_2.c.o   -c /Users/dsemeryc/CLionProjects/libft/formating_2.c
 
 CMakeFiles/libft.dir/formating_2.c.i: cmake_force
@@ -943,7 +956,7 @@ CMakeFiles/libft.dir/formating_2.c.s: cmake_force
 
 CMakeFiles/libft.dir/ft_itoa_int128.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/ft_itoa_int128.c.o: ../ft_itoa_int128.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/libft.dir/ft_itoa_int128.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/libft.dir/ft_itoa_int128.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_itoa_int128.c.o   -c /Users/dsemeryc/CLionProjects/libft/ft_itoa_int128.c
 
 CMakeFiles/libft.dir/ft_itoa_int128.c.i: cmake_force
@@ -956,7 +969,7 @@ CMakeFiles/libft.dir/ft_itoa_int128.c.s: cmake_force
 
 CMakeFiles/libft.dir/ft_printf.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/ft_printf.c.o: ../ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/libft.dir/ft_printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/libft.dir/ft_printf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_printf.c.o   -c /Users/dsemeryc/CLionProjects/libft/ft_printf.c
 
 CMakeFiles/libft.dir/ft_printf.c.i: cmake_force
@@ -969,7 +982,7 @@ CMakeFiles/libft.dir/ft_printf.c.s: cmake_force
 
 CMakeFiles/libft.dir/itoa_base_long.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/itoa_base_long.c.o: ../itoa_base_long.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/libft.dir/itoa_base_long.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/libft.dir/itoa_base_long.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/itoa_base_long.c.o   -c /Users/dsemeryc/CLionProjects/libft/itoa_base_long.c
 
 CMakeFiles/libft.dir/itoa_base_long.c.i: cmake_force
@@ -982,7 +995,7 @@ CMakeFiles/libft.dir/itoa_base_long.c.s: cmake_force
 
 CMakeFiles/libft.dir/itoa_base_ull.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/itoa_base_ull.c.o: ../itoa_base_ull.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/libft.dir/itoa_base_ull.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/libft.dir/itoa_base_ull.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/itoa_base_ull.c.o   -c /Users/dsemeryc/CLionProjects/libft/itoa_base_ull.c
 
 CMakeFiles/libft.dir/itoa_base_ull.c.i: cmake_force
@@ -993,9 +1006,22 @@ CMakeFiles/libft.dir/itoa_base_ull.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/itoa_base_ull.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/itoa_base_ull.c -o CMakeFiles/libft.dir/itoa_base_ull.c.s
 
+CMakeFiles/libft.dir/lists_creation.c.o: CMakeFiles/libft.dir/flags.make
+CMakeFiles/libft.dir/lists_creation.c.o: ../lists_creation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/libft.dir/lists_creation.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/lists_creation.c.o   -c /Users/dsemeryc/CLionProjects/libft/lists_creation.c
+
+CMakeFiles/libft.dir/lists_creation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/lists_creation.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/CLionProjects/libft/lists_creation.c > CMakeFiles/libft.dir/lists_creation.c.i
+
+CMakeFiles/libft.dir/lists_creation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/lists_creation.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/lists_creation.c -o CMakeFiles/libft.dir/lists_creation.c.s
+
 CMakeFiles/libft.dir/main.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/libft.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/libft.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/main.c.o   -c /Users/dsemeryc/CLionProjects/libft/main.c
 
 CMakeFiles/libft.dir/main.c.i: cmake_force
@@ -1006,9 +1032,22 @@ CMakeFiles/libft.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/main.c -o CMakeFiles/libft.dir/main.c.s
 
+CMakeFiles/libft.dir/matrix_creation.c.o: CMakeFiles/libft.dir/flags.make
+CMakeFiles/libft.dir/matrix_creation.c.o: ../matrix_creation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/libft.dir/matrix_creation.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/matrix_creation.c.o   -c /Users/dsemeryc/CLionProjects/libft/matrix_creation.c
+
+CMakeFiles/libft.dir/matrix_creation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/matrix_creation.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/CLionProjects/libft/matrix_creation.c > CMakeFiles/libft.dir/matrix_creation.c.i
+
+CMakeFiles/libft.dir/matrix_creation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/matrix_creation.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/matrix_creation.c -o CMakeFiles/libft.dir/matrix_creation.c.s
+
 CMakeFiles/libft.dir/print_float.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/print_float.c.o: ../print_float.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/libft.dir/print_float.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/libft.dir/print_float.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/print_float.c.o   -c /Users/dsemeryc/CLionProjects/libft/print_float.c
 
 CMakeFiles/libft.dir/print_float.c.i: cmake_force
@@ -1021,7 +1060,7 @@ CMakeFiles/libft.dir/print_float.c.s: cmake_force
 
 CMakeFiles/libft.dir/print_float_add.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/print_float_add.c.o: ../print_float_add.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/libft.dir/print_float_add.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/libft.dir/print_float_add.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/print_float_add.c.o   -c /Users/dsemeryc/CLionProjects/libft/print_float_add.c
 
 CMakeFiles/libft.dir/print_float_add.c.i: cmake_force
@@ -1034,7 +1073,7 @@ CMakeFiles/libft.dir/print_float_add.c.s: cmake_force
 
 CMakeFiles/libft.dir/print_int.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/print_int.c.o: ../print_int.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/libft.dir/print_int.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/libft.dir/print_int.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/print_int.c.o   -c /Users/dsemeryc/CLionProjects/libft/print_int.c
 
 CMakeFiles/libft.dir/print_int.c.i: cmake_force
@@ -1045,9 +1084,22 @@ CMakeFiles/libft.dir/print_int.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/print_int.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/print_int.c -o CMakeFiles/libft.dir/print_int.c.s
 
+CMakeFiles/libft.dir/queue_functions.c.o: CMakeFiles/libft.dir/flags.make
+CMakeFiles/libft.dir/queue_functions.c.o: ../queue_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/libft.dir/queue_functions.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/queue_functions.c.o   -c /Users/dsemeryc/CLionProjects/libft/queue_functions.c
+
+CMakeFiles/libft.dir/queue_functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/queue_functions.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/CLionProjects/libft/queue_functions.c > CMakeFiles/libft.dir/queue_functions.c.i
+
+CMakeFiles/libft.dir/queue_functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/queue_functions.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/queue_functions.c -o CMakeFiles/libft.dir/queue_functions.c.s
+
 CMakeFiles/libft.dir/service_functions.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/service_functions.c.o: ../service_functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/libft.dir/service_functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/libft.dir/service_functions.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/service_functions.c.o   -c /Users/dsemeryc/CLionProjects/libft/service_functions.c
 
 CMakeFiles/libft.dir/service_functions.c.i: cmake_force
@@ -1060,7 +1112,7 @@ CMakeFiles/libft.dir/service_functions.c.s: cmake_force
 
 CMakeFiles/libft.dir/service_functions2.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/service_functions2.c.o: ../service_functions2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/libft.dir/service_functions2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/libft.dir/service_functions2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/service_functions2.c.o   -c /Users/dsemeryc/CLionProjects/libft/service_functions2.c
 
 CMakeFiles/libft.dir/service_functions2.c.i: cmake_force
@@ -1073,7 +1125,7 @@ CMakeFiles/libft.dir/service_functions2.c.s: cmake_force
 
 CMakeFiles/libft.dir/stack_func.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/stack_func.c.o: ../stack_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/libft.dir/stack_func.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/libft.dir/stack_func.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/stack_func.c.o   -c /Users/dsemeryc/CLionProjects/libft/stack_func.c
 
 CMakeFiles/libft.dir/stack_func.c.i: cmake_force
@@ -1086,7 +1138,7 @@ CMakeFiles/libft.dir/stack_func.c.s: cmake_force
 
 CMakeFiles/libft.dir/stack_func_2.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/stack_func_2.c.o: ../stack_func_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/libft.dir/stack_func_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/libft.dir/stack_func_2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/stack_func_2.c.o   -c /Users/dsemeryc/CLionProjects/libft/stack_func_2.c
 
 CMakeFiles/libft.dir/stack_func_2.c.i: cmake_force
@@ -1099,7 +1151,7 @@ CMakeFiles/libft.dir/stack_func_2.c.s: cmake_force
 
 CMakeFiles/libft.dir/validation.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/validation.c.o: ../validation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/libft.dir/validation.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/libft.dir/validation.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/validation.c.o   -c /Users/dsemeryc/CLionProjects/libft/validation.c
 
 CMakeFiles/libft.dir/validation.c.i: cmake_force
@@ -1109,58 +1161,6 @@ CMakeFiles/libft.dir/validation.c.i: cmake_force
 CMakeFiles/libft.dir/validation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/validation.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/validation.c -o CMakeFiles/libft.dir/validation.c.s
-
-CMakeFiles/libft.dir/lists_creation.c.o: CMakeFiles/libft.dir/flags.make
-CMakeFiles/libft.dir/lists_creation.c.o: ../lists_creation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/libft.dir/lists_creation.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/lists_creation.c.o   -c /Users/dsemeryc/CLionProjects/libft/lists_creation.c
-
-CMakeFiles/libft.dir/lists_creation.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/lists_creation.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/CLionProjects/libft/lists_creation.c > CMakeFiles/libft.dir/lists_creation.c.i
-
-CMakeFiles/libft.dir/lists_creation.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/lists_creation.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/lists_creation.c -o CMakeFiles/libft.dir/lists_creation.c.s
-
-CMakeFiles/libft.dir/matrix_creation.c.o: CMakeFiles/libft.dir/flags.make
-CMakeFiles/libft.dir/matrix_creation.c.o: ../matrix_creation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/libft.dir/matrix_creation.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/matrix_creation.c.o   -c /Users/dsemeryc/CLionProjects/libft/matrix_creation.c
-
-CMakeFiles/libft.dir/matrix_creation.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/matrix_creation.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/CLionProjects/libft/matrix_creation.c > CMakeFiles/libft.dir/matrix_creation.c.i
-
-CMakeFiles/libft.dir/matrix_creation.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/matrix_creation.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/matrix_creation.c -o CMakeFiles/libft.dir/matrix_creation.c.s
-
-CMakeFiles/libft.dir/algorithm.c.o: CMakeFiles/libft.dir/flags.make
-CMakeFiles/libft.dir/algorithm.c.o: ../algorithm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/libft.dir/algorithm.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/algorithm.c.o   -c /Users/dsemeryc/CLionProjects/libft/algorithm.c
-
-CMakeFiles/libft.dir/algorithm.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/algorithm.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/CLionProjects/libft/algorithm.c > CMakeFiles/libft.dir/algorithm.c.i
-
-CMakeFiles/libft.dir/algorithm.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/algorithm.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/algorithm.c -o CMakeFiles/libft.dir/algorithm.c.s
-
-CMakeFiles/libft.dir/queue_functions.c.o: CMakeFiles/libft.dir/flags.make
-CMakeFiles/libft.dir/queue_functions.c.o: ../queue_functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/libft.dir/queue_functions.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/queue_functions.c.o   -c /Users/dsemeryc/CLionProjects/libft/queue_functions.c
-
-CMakeFiles/libft.dir/queue_functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/queue_functions.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/CLionProjects/libft/queue_functions.c > CMakeFiles/libft.dir/queue_functions.c.i
-
-CMakeFiles/libft.dir/queue_functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/queue_functions.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/CLionProjects/libft/queue_functions.c -o CMakeFiles/libft.dir/queue_functions.c.s
 
 # Object files for target libft
 libft_OBJECTS = \
@@ -1230,25 +1230,25 @@ libft_OBJECTS = \
 "CMakeFiles/libft.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/libft.dir/libft/get_next_line.c.o" \
 "CMakeFiles/libft.dir/add_func.c.o" \
+"CMakeFiles/libft.dir/algorithm.c.o" \
 "CMakeFiles/libft.dir/formating.c.o" \
 "CMakeFiles/libft.dir/formating_2.c.o" \
 "CMakeFiles/libft.dir/ft_itoa_int128.c.o" \
 "CMakeFiles/libft.dir/ft_printf.c.o" \
 "CMakeFiles/libft.dir/itoa_base_long.c.o" \
 "CMakeFiles/libft.dir/itoa_base_ull.c.o" \
+"CMakeFiles/libft.dir/lists_creation.c.o" \
 "CMakeFiles/libft.dir/main.c.o" \
+"CMakeFiles/libft.dir/matrix_creation.c.o" \
 "CMakeFiles/libft.dir/print_float.c.o" \
 "CMakeFiles/libft.dir/print_float_add.c.o" \
 "CMakeFiles/libft.dir/print_int.c.o" \
+"CMakeFiles/libft.dir/queue_functions.c.o" \
 "CMakeFiles/libft.dir/service_functions.c.o" \
 "CMakeFiles/libft.dir/service_functions2.c.o" \
 "CMakeFiles/libft.dir/stack_func.c.o" \
 "CMakeFiles/libft.dir/stack_func_2.c.o" \
-"CMakeFiles/libft.dir/validation.c.o" \
-"CMakeFiles/libft.dir/lists_creation.c.o" \
-"CMakeFiles/libft.dir/matrix_creation.c.o" \
-"CMakeFiles/libft.dir/algorithm.c.o" \
-"CMakeFiles/libft.dir/queue_functions.c.o"
+"CMakeFiles/libft.dir/validation.c.o"
 
 # External object files for target libft
 libft_EXTERNAL_OBJECTS =
@@ -1319,25 +1319,25 @@ libft: CMakeFiles/libft.dir/libft/ft_tolower.c.o
 libft: CMakeFiles/libft.dir/libft/ft_toupper.c.o
 libft: CMakeFiles/libft.dir/libft/get_next_line.c.o
 libft: CMakeFiles/libft.dir/add_func.c.o
+libft: CMakeFiles/libft.dir/algorithm.c.o
 libft: CMakeFiles/libft.dir/formating.c.o
 libft: CMakeFiles/libft.dir/formating_2.c.o
 libft: CMakeFiles/libft.dir/ft_itoa_int128.c.o
 libft: CMakeFiles/libft.dir/ft_printf.c.o
 libft: CMakeFiles/libft.dir/itoa_base_long.c.o
 libft: CMakeFiles/libft.dir/itoa_base_ull.c.o
+libft: CMakeFiles/libft.dir/lists_creation.c.o
 libft: CMakeFiles/libft.dir/main.c.o
+libft: CMakeFiles/libft.dir/matrix_creation.c.o
 libft: CMakeFiles/libft.dir/print_float.c.o
 libft: CMakeFiles/libft.dir/print_float_add.c.o
 libft: CMakeFiles/libft.dir/print_int.c.o
+libft: CMakeFiles/libft.dir/queue_functions.c.o
 libft: CMakeFiles/libft.dir/service_functions.c.o
 libft: CMakeFiles/libft.dir/service_functions2.c.o
 libft: CMakeFiles/libft.dir/stack_func.c.o
 libft: CMakeFiles/libft.dir/stack_func_2.c.o
 libft: CMakeFiles/libft.dir/validation.c.o
-libft: CMakeFiles/libft.dir/lists_creation.c.o
-libft: CMakeFiles/libft.dir/matrix_creation.c.o
-libft: CMakeFiles/libft.dir/algorithm.c.o
-libft: CMakeFiles/libft.dir/queue_functions.c.o
 libft: CMakeFiles/libft.dir/build.make
 libft: CMakeFiles/libft.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dsemeryc/CLionProjects/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Linking C executable libft"

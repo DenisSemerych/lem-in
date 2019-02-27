@@ -78,19 +78,24 @@ add_executable(libft
         libft/get_next_line.h
         libft/libft.h
         add_func.c
+        algorithm.c
         formating.c
         formating_2.c
         ft_itoa_int128.c
         ft_printf.c
         itoa_base_long.c
         itoa_base_ull.c
-        includes/libft.h
+        lem_in.h
+        lists_creation.c
         main.c
+        matrix_creation.c
         print_float.c
         print_float_add.c
         print_int.c
         printf.h
+        queue_functions.c
         service_functions.c
         service_functions2.c
         stack_func.c
-        stack_func_2.c lem_in.h validation.c "lists_creation.c" matrix_creation.c algorithm.c queue_functions.c)
+        stack_func_2.c
+        validation.c)

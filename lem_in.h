@@ -12,6 +12,7 @@ typedef struct s_room
     int  x;
     int  y;
     int  is_visited;
+    int  is_closed;
 }              t_room;
 typedef struct s_link
 {
@@ -42,4 +43,5 @@ t_room *reverse_hash_function(int index, t_list *hash_table);
 void    del_last(t_list **head);
 t_list *algorythm(t_list **rooms);
 t_list  *bfs(t_list **rooms, t_list *path);
+int   add_to_queue(t_list **queue, t_room *node, t_list **paths);
 #endif

@@ -1,4 +1,5 @@
 4
+##verbose
 3 2 2
 ##start
 start 4 0

@@ -68,6 +68,7 @@ t_room *create_room(char *name, int x, int y, int start_end)
     room->is_end = (start_end == 2 ? 1 : 0);
     room->from = NULL;
     room->is_visited = 0;
+    room->is_closed = 0;
     return (room);
 }
 
