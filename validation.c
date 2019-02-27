@@ -129,5 +129,5 @@ void    validate(t_list *map)
 //        }
 //        rooms = rooms->next;
 //    }
-    algorythm(&rooms);
+    algorythm(&rooms, num_of_ants);
 }

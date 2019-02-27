@@ -2,6 +2,7 @@
 #define LEM_IN_H
 #include "printf.h"
 #include "libft.h"
+#define COMPARE(a,b,c) (count_ef(a, c) < count_ef(b, c))
 typedef struct s_room
 {
     char *name;
@@ -41,7 +42,8 @@ t_room *hash_function(t_list *hash_table, int index);
 t_list *last_elem(t_list *head);
 t_room *reverse_hash_function(int index, t_list *hash_table);
 void    del_last(t_list **head);
-t_list *algorythm(t_list **rooms);
-t_list  *bfs(t_list **rooms, t_list *path);
+t_list *algorythm(t_list **rooms, int num_of_ants);
+t_list  *bfs(t_list **rooms);
 int   add_to_queue(t_list **queue, t_room *node, t_list **paths);
+void clear_rooms(t_list **rooms, t_list *path);
 #endif

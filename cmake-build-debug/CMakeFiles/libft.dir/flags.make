@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/dsemeryc/CLionProjects/libft/. -I/Users/dsemeryc/CLionProjects/libft/includes -I/Users/dsemeryc/CLionProjects/libft/libft 
+C_INCLUDES = -I/Users/dsemeryc/work/. -I/Users/dsemeryc/work/includes -I/Users/dsemeryc/work/libft 
 
