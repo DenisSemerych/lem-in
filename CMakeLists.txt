@@ -98,4 +98,4 @@ add_executable(libft
         service_functions2.c
         stack_func.c
         stack_func_2.c
-        validation.c)
+        validation.c moving_ants.c)

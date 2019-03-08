@@ -241,6 +241,11 @@ CMakeFiles/libft.dir/main.c.o
  /Users/dsemeryc/work/printf.h
 CMakeFiles/libft.dir/matrix_creation.c.o
  /Users/dsemeryc/work/matrix_creation.c
+CMakeFiles/libft.dir/moving_ants.c.o
+ ../includes/libft.h
+ /Users/dsemeryc/work/lem_in.h
+ /Users/dsemeryc/work/moving_ants.c
+ /Users/dsemeryc/work/printf.h
 CMakeFiles/libft.dir/print_float.c.o
  /Users/dsemeryc/work/includes/libft.h
  /Users/dsemeryc/work/includes/printf.h

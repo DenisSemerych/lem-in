@@ -2,7 +2,7 @@
 #define LEM_IN_H
 #include "printf.h"
 #include "libft.h"
-#define COMPARE(a,b,c) (count_ef(a, c) < count_ef(b, c))
+#define COMPARE(a,b,c) (count_ef(a, c) > count_ef(b, c))
 typedef struct s_room
 {
     char *name;
@@ -14,6 +14,7 @@ typedef struct s_room
     int  y;
     int  is_visited;
     int  is_closed;
+    int  ant;
 }              t_room;
 typedef struct s_link
 {
@@ -23,7 +24,7 @@ typedef struct s_link
 typedef struct s_ant
 {
     int   ant;
-    t_list *room;
+    t_list *path;
 }              t_ant;
 t_list *add_to_the_end_of_list(t_list *head, t_list *new);
 void    validate(t_list *map);
@@ -46,4 +47,5 @@ t_list *algorythm(t_list **rooms, int num_of_ants);
 t_list  *bfs(t_list **rooms);
 int   add_to_queue(t_list **queue, t_room *node, t_list **paths);
 void clear_rooms(t_list **rooms, t_list *path);
+void    move(t_list **rooms, t_list *ants, t_list *paths, int num_of_ants);
 #endif

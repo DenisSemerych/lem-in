@@ -1,18 +1,20 @@
 #include "lem_in.h"
 
-int count_ef(t_list *paths, int num_of_ants)
+double count_ef(t_list *paths, int num_of_ants)
 {
     int lenght;
     int num_of_paths;
 
-    lenght = 0;
     num_of_paths = list_count(paths);
+    lenght = 0;
+    if (!paths)
+        return (42424242);
     while(paths)
     {
-        lenght += list_count((t_list *)paths->content) - 2;
+        lenght += list_count((t_list *)paths->content);
         paths = paths->next;
     }
-    return (num_of_ants / num_of_paths + lenght);
+    return (num_of_ants / (lenght / num_of_paths));
 }
 
 void print_rooms(t_list **rooms)
@@ -28,28 +30,28 @@ void print_rooms(t_list **rooms)
 }
 
 
-t_list *contains(t_list **paths, t_room *node)
-{
-    t_list *crawler;
-    t_list *path;
-    t_room *room;
-
-    crawler = *paths;
-
-    while (crawler)
-    {
-        path = crawler->content;
-        while (path)
-        {
-            room = path->content;
-            if (room == node)
-                return (path);
-            path = path->next;
-        }
-        crawler = crawler->next;
-    }
-    return (NULL);
-}
+//t_list *contains(t_list **paths, t_room *node)
+//{
+//    t_list *crawler;
+//    t_list *path;
+//    t_room *room;
+//
+//    crawler = *paths;
+//
+//    while (crawler)
+//    {
+//        path = crawler->content;
+//        while (path)
+//        {
+//            room = path->content;
+//            if (room == node)
+//                return (path);
+//            path = path->next;
+//        }
+//        crawler = crawler->next;
+//    }
+//    return (NULL);
+//}
 
 void    save_path(t_room *node, t_list **paths)
 {
@@ -148,7 +150,7 @@ t_list *algorythm(t_list **rooms, int num_of_ants)
     t_list *optim;
 
     paths = bfs(rooms);
-    optim = paths;
+    optim = NULL;
     while (paths)
     {
         tmp_paths = ft_lstnew(NULL, 0);

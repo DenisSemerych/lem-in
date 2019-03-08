@@ -84,6 +84,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/stack_func.c.o"
   "CMakeFiles/libft.dir/stack_func_2.c.o"
   "CMakeFiles/libft.dir/validation.c.o"
+  "CMakeFiles/libft.dir/moving_ants.c.o"
   "libft.pdb"
   "libft"
 )

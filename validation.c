@@ -2,6 +2,15 @@
 #include <stdio.h>
 
 
+void    print_map(t_list *map)
+{
+    while (map)
+    {
+        ft_printf("%s\n", map->content);
+        map = map->next;
+    }
+}
+
 //
 //void    print_list(t_list *rooms, t_list *links, t_list *ants)
 //{
@@ -109,13 +118,20 @@ void    validate(t_list *map)
     int    num_of_ants;
     t_list *ants;
     t_list *rooms;
+    t_list *paths;
+    t_list *to_print;
 
+    to_print = map;
     if ((num_of_ants = ft_atoi(map->content)) <= 0)
         put_err_msg_exit("Error: incorrect number of ants");
     map = map->next;
     rooms = NULL;
     add_rooms_and_links(map, &rooms);
     ants = create_ants(num_of_ants, check_rooms(rooms));
+    paths = algorythm(&rooms, num_of_ants);
+    print_map(to_print);
+    move(&rooms, ants, paths, num_of_ants);
+}
 //    while (rooms)
 //    {
 //        t_room *room = (t_room *)rooms->content;
@@ -129,5 +145,3 @@ void    validate(t_list *map)
 //        }
 //        rooms = rooms->next;
 //    }
-    algorythm(&rooms, num_of_ants);
-}

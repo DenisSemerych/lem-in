@@ -39,9 +39,9 @@ t_list *create_ants(int num_of_ants, t_list *start_room)
     {
         ant = (t_ant *)malloc(sizeof(t_ant));
         ant->ant = num_of_ants;
-        ant->room = start_room;
+        ant->path = NULL;
         new = ft_lstnew(ant, sizeof(t_ant));
-        head = add_to_the_end_of_list(head, new);
+        ft_lstadd(&head, new);
         num_of_ants--;
     }
     return (head);
@@ -69,6 +69,7 @@ t_room *create_room(char *name, int x, int y, int start_end)
     room->from = NULL;
     room->is_visited = 0;
     room->is_closed = 0;
+    room->ant = 0;
     return (room);
 }
 

@@ -2175,6 +2175,33 @@ matrix_creation.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/matrix_creation.c.s
 .PHONY : matrix_creation.c.s
 
+moving_ants.o: moving_ants.c.o
+
+.PHONY : moving_ants.o
+
+# target to build an object file
+moving_ants.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/moving_ants.c.o
+.PHONY : moving_ants.c.o
+
+moving_ants.i: moving_ants.c.i
+
+.PHONY : moving_ants.i
+
+# target to preprocess a source file
+moving_ants.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/moving_ants.c.i
+.PHONY : moving_ants.c.i
+
+moving_ants.s: moving_ants.c.s
+
+.PHONY : moving_ants.s
+
+# target to generate assembly for a file
+moving_ants.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/moving_ants.c.s
+.PHONY : moving_ants.c.s
+
 print_float.o: print_float.c.o
 
 .PHONY : print_float.o
@@ -2655,6 +2682,9 @@ help:
 	@echo "... matrix_creation.o"
 	@echo "... matrix_creation.i"
 	@echo "... matrix_creation.s"
+	@echo "... moving_ants.o"
+	@echo "... moving_ants.i"
+	@echo "... moving_ants.s"
 	@echo "... print_float.o"
 	@echo "... print_float.i"
 	@echo "... print_float.s"

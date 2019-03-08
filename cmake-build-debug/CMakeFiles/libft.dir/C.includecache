@@ -16,15 +16,15 @@ stdlib.h
 errno.h
 -
 
-/Users/dsemeryc/work/algorithm.c
-lem_in.h
-/Users/dsemeryc/work/lem_in.h
-
 /Users/dsemeryc/work/lem_in.h
 printf.h
 /Users/dsemeryc/work/printf.h
 libft.h
 /Users/dsemeryc/work/libft.h
+
+/Users/dsemeryc/work/moving_ants.c
+lem_in.h
+/Users/dsemeryc/work/lem_in.h
 
 /Users/dsemeryc/work/printf.h
 stdarg.h
