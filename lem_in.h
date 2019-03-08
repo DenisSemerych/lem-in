@@ -24,6 +24,7 @@ typedef struct s_link
 typedef struct s_ant
 {
     int   ant;
+    int   end;
     t_list *path;
 }              t_ant;
 t_list *add_to_the_end_of_list(t_list *head, t_list *new);
@@ -47,5 +48,5 @@ t_list *algorythm(t_list **rooms, int num_of_ants);
 t_list  *bfs(t_list **rooms);
 int   add_to_queue(t_list **queue, t_room *node, t_list **paths);
 void clear_rooms(t_list **rooms, t_list *path);
-void    move(t_list **rooms, t_list *ants, t_list *paths, int num_of_ants);
+void    move(t_list **rooms, t_list *ants, t_list *paths);
 #endif

@@ -40,6 +40,7 @@ t_list *create_ants(int num_of_ants, t_list *start_room)
         ant = (t_ant *)malloc(sizeof(t_ant));
         ant->ant = num_of_ants;
         ant->path = NULL;
+        ant->end = 0;
         new = ft_lstnew(ant, sizeof(t_ant));
         ft_lstadd(&head, new);
         num_of_ants--;

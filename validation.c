@@ -130,7 +130,7 @@ void    validate(t_list *map)
     ants = create_ants(num_of_ants, check_rooms(rooms));
     paths = algorythm(&rooms, num_of_ants);
     print_map(to_print);
-    move(&rooms, ants, paths, num_of_ants);
+    move(&rooms, ants, paths);
 }
 //    while (rooms)
 //    {
