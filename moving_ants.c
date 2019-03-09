@@ -1,23 +1,5 @@
 #include "lem_in.h"
 
-void change_ant(t_list **rooms, t_room *next)
-{
-    t_list *crawler;
-    t_room *compare;
-
-    crawler = *rooms;
-    while (crawler)
-    {
-        compare = crawler->content;
-        if (!ft_strcmp(compare->name, next->name))
-        {
-            compare->ant = 1;
-            ft_printf("here");
-        }
-        crawler = crawler->next;
-    }
-}
-
 int  all_at_end(t_list *ants)
 {
     t_ant *ant;
@@ -68,38 +50,66 @@ void print_path(t_list *path)
     ft_printf("\n");
 }
 
-t_list *give_path(t_list *paths)
+t_list *give_path(t_list *paths, int sum, int on_start, int prev)
 {
     t_list *min;
 
     min = NULL;
-    while (paths)
-    {
-        if (!min || list_count(paths->content) < list_count(min))
-            min = paths->content;
-        paths = paths->next;
-    }
+    if (((list_count(paths) - 1) * prev) - sum < on_start)
+        min = paths;
     return (min);
+}
+
+int     all_with_paths(t_list **ants)
+{
+    t_list *crawler;
+    t_ant *ant;
+
+    crawler = *ants;
+    while (crawler)
+    {
+        ant = crawler->content;
+        if (!ant->path)
+            return (0);
+        crawler = crawler->next;
+    }
+    return (1);
 }
 
 void    give_paths(t_list **ants, t_list *paths)
 {
     t_list *tmp;
     t_list *crawler;
-    t_list *suitable_path;
     t_ant *ant;
+    int sum;
+    int prev;
+    int on_start = list_count(*ants);
 
     tmp = paths;
-    crawler = *ants;
-    while (crawler)
+    sum = 0;
+    prev = 0;
+    crawler = NULL;
+    while (!all_with_paths(ants))
     {
+        if (!crawler)
+            crawler = *ants;
         ant = crawler->content;
-        suitable_path = give_path(tmp);
-        ant->path = suitable_path;
+        sum += list_count(tmp->content);
+        prev++;
+        ant->path = give_path(tmp->content, sum, on_start, prev);
+        if (ant->path)
+        {
+            on_start--;
+            crawler = crawler->next;
+        }
         tmp = tmp->next;
-        crawler = crawler->next;
+
         if (!tmp)
+        {
             tmp = paths;
+            sum = 0;
+            prev = 0;
+        }
     }
 }
 
@@ -107,8 +117,10 @@ void    move(t_list **rooms, t_list *ants, t_list *paths)
 {
     t_ant *ant;
     t_list *tmp;
+    int count;
 
     give_paths(&ants, paths);
+    count = 0;
     while (!all_at_end(ants))
     {
         tmp = ants;
@@ -119,5 +131,7 @@ void    move(t_list **rooms, t_list *ants, t_list *paths)
             tmp = tmp->next;
         }
         ft_printf("\n");
+        count++;
     }
+    ft_printf("%d number of lines", count);
 }

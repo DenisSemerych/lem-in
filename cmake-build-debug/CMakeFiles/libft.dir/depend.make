@@ -241,6 +241,11 @@ CMakeFiles/libft.dir/main.c.o: ../printf.h
 
 CMakeFiles/libft.dir/matrix_creation.c.o: ../matrix_creation.c
 
+CMakeFiles/libft.dir/memory_cleaning.c.o: ../includes/libft.h
+CMakeFiles/libft.dir/memory_cleaning.c.o: ../lem_in.h
+CMakeFiles/libft.dir/memory_cleaning.c.o: ../memory_cleaning.c
+CMakeFiles/libft.dir/memory_cleaning.c.o: ../printf.h
+
 CMakeFiles/libft.dir/moving_ants.c.o: ../includes/libft.h
 CMakeFiles/libft.dir/moving_ants.c.o: ../lem_in.h
 CMakeFiles/libft.dir/moving_ants.c.o: ../moving_ants.c

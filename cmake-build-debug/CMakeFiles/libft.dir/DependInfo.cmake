@@ -80,6 +80,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dsemeryc/work/lists_creation.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/lists_creation.c.o"
   "/Users/dsemeryc/work/main.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/main.c.o"
   "/Users/dsemeryc/work/matrix_creation.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/matrix_creation.c.o"
+  "/Users/dsemeryc/work/memory_cleaning.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/memory_cleaning.c.o"
   "/Users/dsemeryc/work/moving_ants.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/moving_ants.c.o"
   "/Users/dsemeryc/work/print_float.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/print_float.c.o"
   "/Users/dsemeryc/work/print_float_add.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/print_float_add.c.o"

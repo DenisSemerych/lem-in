@@ -28,4 +28,5 @@ int main (int argc, char **argv)
     if (!map)
         put_err_msg_exit("Usage: you need to give a valid map");
     validate(map);
+    system("leaks libft");
 }

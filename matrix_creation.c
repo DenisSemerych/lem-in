@@ -108,3 +108,141 @@
 //    }
 //    paths = search_paths(matrix, list_count(ants), hash_table, size);
 //}
+
+//void delete_path(t_list **paths, t_list *path)
+//{
+//    t_list *crawler;
+//    t_list *prev;
+//
+//    crawler = *paths;
+//    prev = NULL;
+//    while (crawler)
+//    {
+//        if (crawler->content == path)
+//        {
+//            prev->next = crawler->next;
+//            break ;
+//        }
+//        prev = crawler;
+//        crawler = crawler->next;
+//    }
+//}
+
+//
+//t_list *search_paths(t_list **rooms)
+//{
+//    algorythm(rooms);
+//
+////    int number = 1;
+////    while (paths)
+////    {
+////        ft_printf("%d path\n", number++);
+////        link = paths->content;
+////        while(link)
+////        {
+////            room = link->content;
+////            ft_printf("%s ", room->name);
+////            link = link->next;
+////        }
+////        ft_printf("\n");
+////        paths = paths->next;
+////    }
+//    return (NULL);
+//}
+
+//t_list *algorythm(t_list **rooms, int num_of_ants)
+//{
+//    t_list *paths;
+//    t_list *tmp_paths;
+//    t_list *optim;
+//
+//    paths = bfs(rooms);
+//    optim = NULL;
+//    while (paths)
+//    {
+//        tmp_paths = ft_lstnew(NULL, 0);
+//        tmp_paths->content = paths->content;
+//        clear_rooms(rooms, tmp_paths);
+//        tmp_paths = add_to_the_end_of_list(tmp_paths, bfs(rooms));
+//        if (COMPARE(optim, tmp_paths, num_of_ants))
+//            optim = tmp_paths;
+//        paths = paths->next;
+//    }
+//    print_paths(optim);
+//    return (optim);
+//}
+//void print_rooms(t_list **rooms)
+//{
+//    t_list *crawler = *rooms;
+//
+//    while (crawler)
+//    {
+//        t_room *room = crawler->content;
+//        ft_printf("%s %d %d\n", room->name, room->is_closed, room->is_visited);
+//        crawler = crawler->next;
+//    }
+//}
+//t_list *contains(t_list **paths, t_room *node)
+//{
+//    t_list *crawler;
+//    t_list *path;
+//    t_room *room;
+//
+//    crawler = *paths;
+//
+//    while (crawler)
+//    {
+//        path = crawler->content;
+//        while (path)
+//        {
+//            room = path->content;
+//            if (room == node)
+//                return (path);
+//            path = path->next;
+//        }
+//        crawler = crawler->next;
+//    }
+//    return (NULL);
+//}
+
+//    while (rooms)
+//    {
+//        t_room *room = (t_room *)rooms->content;
+//        t_list *links = room->links;
+//        while (links)
+//        {
+//            t_room *to;
+//            to = links->content;
+//            ft_printf("room %s connected with room %s\n", room->name, to->name);
+//            links = links->next;
+//        }
+//        rooms = rooms->next;
+//    }
+
+//
+//void    print_list(t_list *rooms, t_list *links, t_list *ants)
+//{
+//
+//    while (rooms)
+//    {
+//        t_room *room = (t_room *)rooms->content;
+//        ft_printf("%s\n x:%d y:%d\n", room->name, room->x, room->y);
+//        rooms = rooms->next;
+//    }
+//    while (links)
+//    {
+//        t_link *link = (t_link *)links->content;
+//        t_room *room1 = link->r1;
+//        t_room *room2 = link->r2;
+//        printf("%s room one linked with %s room two\n", room1->name, room2->name);
+//        links = links->next;
+//    }
+//    while (ants)
+//    {
+//
+//        t_ant *ant = (t_ant *)ants->content;
+//        t_room *ant_room = (t_room *)ant->room->content;
+//        printf("L%d at the %s room\n", ant->ant, ant_room->name);
+//        ants = ants->next;
+//    }
+//}

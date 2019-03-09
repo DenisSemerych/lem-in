@@ -11,45 +11,23 @@ void    print_map(t_list *map)
     }
 }
 
-//
-//void    print_list(t_list *rooms, t_list *links, t_list *ants)
-//{
-//
-//    while (rooms)
-//    {
-//        t_room *room = (t_room *)rooms->content;
-//        ft_printf("%s\n x:%d y:%d\n", room->name, room->x, room->y);
-//        rooms = rooms->next;
-//    }
-//    while (links)
-//    {
-//        t_link *link = (t_link *)links->content;
-//        t_room *room1 = link->r1;
-//        t_room *room2 = link->r2;
-//        printf("%s room one linked with %s room two\n", room1->name, room2->name);
-//        links = links->next;
-//    }
-//    while (ants)
-//    {
-//
-//        t_ant *ant = (t_ant *)ants->content;
-//        t_room *ant_room = (t_room *)ant->room->content;
-//        printf("L%d at the %s room\n", ant->ant, ant_room->name);
-//        ants = ants->next;
-//    }
-//}
+
 
 t_list *validate_room(char *str, t_list *head, int start_end)
 {
     char **info;
     t_room *room;
+    t_list *new;
 
     info = ft_strsplit(str, ' ');
     if (count_size(info) != 3 || spec_atoi(info[1]) < 0 || spec_atoi(info[2]) < 0 ||
     info[0][0] == 'L' || info[0][0] == '#' || info[0][0] == '\0')
         put_err_msg_exit("Error: one of the rooms is invalid");
     room = create_room(info[0], spec_atoi(info[1]), spec_atoi(info[2]), start_end);
-    head = add_to_the_end_of_list(head, ft_lstnew(room, sizeof(t_room)));
+    new = ft_lstnew(NULL, 0);
+    new->content = room;
+    head = add_to_the_end_of_list(head, new);
+    free_str_arr(info, 3);
     return (head);
 }
 
@@ -82,6 +60,7 @@ void validate_link(char *str, t_list **rooms_add)
     last_elem(room_one->links)->content = room_two;
     room_two->links = add_to_the_end_of_list(room_two->links, ft_lstnew(NULL, 0));
     last_elem(room_two->links)->content = room_one;
+    free_str_arr(info, 2);
 }
 
 t_list    *check_rooms(t_list *rooms)
@@ -128,20 +107,9 @@ void    validate(t_list *map)
     rooms = NULL;
     add_rooms_and_links(map, &rooms);
     ants = create_ants(num_of_ants, check_rooms(rooms));
-    paths = algorythm(&rooms, num_of_ants);
+    paths = algorythm(&rooms);
     print_map(to_print);
+    ft_printf("\n");
     move(&rooms, ants, paths);
+    clean(&rooms, &ants, &paths);
 }
-//    while (rooms)
-//    {
-//        t_room *room = (t_room *)rooms->content;
-//        t_list *links = room->links;
-//        while (links)
-//        {
-//            t_room *to;
-//            to = links->content;
-//            ft_printf("room %s connected with room %s\n", room->name, to->name);
-//            links = links->next;
-//        }
-//        rooms = rooms->next;
-//    }

@@ -2175,6 +2175,33 @@ matrix_creation.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/matrix_creation.c.s
 .PHONY : matrix_creation.c.s
 
+memory_cleaning.o: memory_cleaning.c.o
+
+.PHONY : memory_cleaning.o
+
+# target to build an object file
+memory_cleaning.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/memory_cleaning.c.o
+.PHONY : memory_cleaning.c.o
+
+memory_cleaning.i: memory_cleaning.c.i
+
+.PHONY : memory_cleaning.i
+
+# target to preprocess a source file
+memory_cleaning.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/memory_cleaning.c.i
+.PHONY : memory_cleaning.c.i
+
+memory_cleaning.s: memory_cleaning.c.s
+
+.PHONY : memory_cleaning.s
+
+# target to generate assembly for a file
+memory_cleaning.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/memory_cleaning.c.s
+.PHONY : memory_cleaning.c.s
+
 moving_ants.o: moving_ants.c.o
 
 .PHONY : moving_ants.o
@@ -2682,6 +2709,9 @@ help:
 	@echo "... matrix_creation.o"
 	@echo "... matrix_creation.i"
 	@echo "... matrix_creation.s"
+	@echo "... memory_cleaning.o"
+	@echo "... memory_cleaning.i"
+	@echo "... memory_cleaning.s"
 	@echo "... moving_ants.o"
 	@echo "... moving_ants.i"
 	@echo "... moving_ants.s"

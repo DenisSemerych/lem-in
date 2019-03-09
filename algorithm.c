@@ -1,5 +1,20 @@
 #include "lem_in.h"
 
+void   free_queue(t_list **queue)
+{
+    t_list *to_free;
+
+    if (!queue)
+        return ;
+    while (*queue)
+    {
+        to_free = *queue;
+        free(to_free);
+        *queue = (*queue)->next;
+    }
+    free(*queue);
+}
+
 double count_ef(t_list *paths, int num_of_ants)
 {
     int lenght;
@@ -16,42 +31,6 @@ double count_ef(t_list *paths, int num_of_ants)
     }
     return (num_of_ants / (lenght / num_of_paths));
 }
-
-void print_rooms(t_list **rooms)
-{
-    t_list *crawler = *rooms;
-
-    while (crawler)
-    {
-        t_room *room = crawler->content;
-        ft_printf("%s %d %d\n", room->name, room->is_closed, room->is_visited);
-        crawler = crawler->next;
-    }
-}
-
-
-//t_list *contains(t_list **paths, t_room *node)
-//{
-//    t_list *crawler;
-//    t_list *path;
-//    t_room *room;
-//
-//    crawler = *paths;
-//
-//    while (crawler)
-//    {
-//        path = crawler->content;
-//        while (path)
-//        {
-//            room = path->content;
-//            if (room == node)
-//                return (path);
-//            path = path->next;
-//        }
-//        crawler = crawler->next;
-//    }
-//    return (NULL);
-//}
 
 void    save_path(t_room *node, t_list **paths)
 {
@@ -71,34 +50,13 @@ void    save_path(t_room *node, t_list **paths)
     *paths = add_to_the_end_of_list(*paths, to_save);
 }
 
-//void delete_path(t_list **paths, t_list *path)
-//{
-//    t_list *crawler;
-//    t_list *prev;
-//
-//    crawler = *paths;
-//    prev = NULL;
-//    while (crawler)
-//    {
-//        if (crawler->content == path)
-//        {
-//            prev->next = crawler->next;
-//            break ;
-//        }
-//        prev = crawler;
-//        crawler = crawler->next;
-//    }
-//}
-
-int   add_to_queue(t_list **queue, t_room *node, t_list **paths)
+void   add_to_queue(t_list **queue, t_room *node, t_list **paths)
 {
     t_list *each;
     t_room *room;
     t_list *links;
-    int    check;
 
     links = node->links;
-    check = 0;
     while(links)
     {
         each = ft_lstnew(NULL,0);
@@ -111,22 +69,23 @@ int   add_to_queue(t_list **queue, t_room *node, t_list **paths)
                 room->is_visited = 1;
             if (room->is_end)
                 save_path(node, paths);
-            else if (!room->is_closed && (check = 1))
-               // ft_printf("add to queue %s\n", room->name);
+            else if (!room->is_closed)
                 *queue = add_to_the_end_of_list(*queue, each);
+            else
+                free(each);
         }
+        else
+            free(each);
         links = links->next;
     }
-    return (check);
 }
-
-
 
 int print_paths(t_list *tmp_paths)
 {
     t_list *link;
     t_room *room;
     int number = 1;
+    ft_printf("HERE IS PATHS FOR ALL ANTS\n");
     while (tmp_paths)
     {
         ft_printf("%d path\n", number++);
@@ -143,26 +102,22 @@ int print_paths(t_list *tmp_paths)
     return (0);
 }
 
-t_list *algorythm(t_list **rooms, int num_of_ants)
+t_list *algorythm(t_list **rooms)
 {
-    t_list *paths;
+    t_list *path;
     t_list *tmp_paths;
-    t_list *optim;
+    t_list *solution;
 
-    paths = bfs(rooms);
-    optim = NULL;
-    while (paths)
+
+    solution = NULL;
+    while ((path = bfs(rooms)))
     {
-        tmp_paths = ft_lstnew(NULL, 0);
-        tmp_paths->content = paths->content;
-        clear_rooms(rooms, paths);
-        tmp_paths = add_to_the_end_of_list(tmp_paths, bfs(rooms));
-        if (COMPARE(optim, tmp_paths, num_of_ants))
-            optim = tmp_paths;
-        paths = paths->next;
+        tmp_paths = path;
+        print_paths(tmp_paths);
+        solution = add_to_the_end_of_list(solution, tmp_paths);
+        clear_rooms(rooms, solution);
     }
-    print_paths(optim);
-    return (optim);
+    return (solution);
 }
 
 t_list *give_start_room(t_list **rooms)
@@ -185,24 +140,25 @@ t_list *give_start_room(t_list **rooms)
     return (NULL);
 }
 
-
-
 int contains_int(t_list *path, t_room *node)
 {
     t_room *room;
+    t_list *crawler;
 
-
-    path = path->content;
     while (path)
     {
-        room = path->content;
-        if (room == node)
-            return (1);
+        crawler = path->content;
+        while (crawler)
+        {
+            room = crawler->content;
+            if (room == node)
+                return (1);
+            crawler = crawler->next;
+        }
         path = path->next;
     }
     return (0);
 }
-
 
 void clear_rooms(t_list **rooms, t_list *path)
 {
@@ -227,36 +183,22 @@ t_list  *bfs(t_list **rooms)
     t_list *queue;
     t_room *node;
     t_list *new_paths;
+    t_list *to_free;
 
     queue = give_start_room(rooms);
     new_paths = NULL;
     while(queue)
     {
         node = (t_room *)queue->content;
+        to_free = queue;
         queue = queue->next;
+        free(to_free);
         add_to_queue(&queue, node, &new_paths);
+        if (new_paths)
+        {
+            free_queue(&queue);
+            break ;
+        }
     }
     return (new_paths);
 }
-//
-//t_list *search_paths(t_list **rooms)
-//{
-//    algorythm(rooms);
-//
-////    int number = 1;
-////    while (paths)
-////    {
-////        ft_printf("%d path\n", number++);
-////        link = paths->content;
-////        while(link)
-////        {
-////            room = link->content;
-////            ft_printf("%s ", room->name);
-////            link = link->next;
-////        }
-////        ft_printf("\n");
-////        paths = paths->next;
-////    }
-//    return (NULL);
-//}
-
