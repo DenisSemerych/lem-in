@@ -92,6 +92,9 @@
 		<Unit filename="/Users/dsemeryc/work/algorithm.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/dsemeryc/work/extra.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/dsemeryc/work/formating.c">
 			<Option target="libft"/>
 		</Unit>
@@ -326,9 +329,6 @@
 		<Unit filename="/Users/dsemeryc/work/main.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/dsemeryc/work/matrix_creation.c">
-			<Option target="libft"/>
-		</Unit>
 		<Unit filename="/Users/dsemeryc/work/memory_cleaning.c">
 			<Option target="libft"/>
 		</Unit>
@@ -360,6 +360,9 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/dsemeryc/work/stack_func_2.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/dsemeryc/work/unusefull.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/dsemeryc/work/validation.c">

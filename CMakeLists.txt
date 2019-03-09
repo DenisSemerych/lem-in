@@ -88,7 +88,7 @@ add_executable(libft
         lem_in.h
         lists_creation.c
         main.c
-        matrix_creation.c
+        unusefull.c
         print_float.c
         print_float_add.c
         print_int.c
@@ -98,4 +98,4 @@ add_executable(libft
         service_functions2.c
         stack_func.c
         stack_func_2.c
-        validation.c moving_ants.c memory_cleaning.c)
+        validation.c moving_ants.c memory_cleaning.c extra.c)

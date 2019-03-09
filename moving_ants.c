@@ -1,137 +1,114 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   moving_ants.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dsemeryc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/03/09 20:18:59 by dsemeryc          #+#    #+#             */
+/*   Updated: 2019/03/09 21:29:58 by dsemeryc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lem_in.h"
 
-int  all_at_end(t_list *ants)
+void		make_move(t_ant **ant, t_list **rooms)
 {
-    t_ant *ant;
+	t_list *path;
+	t_room *next;
+	t_room *now;
 
-    while (ants)
-    {
-        ant = ants->content;
-        if (!ant->end)
-            return (0);
-        ants = ants->next;
-    }
-    return (1);
+	path = (*ant)->path;
+	if ((*ant)->end)
+		return ;
+	now = path->content;
+	next = path->next->content;
+	if (next->is_end)
+		(*ant)->end = 1;
+	if (!next->ant)
+	{
+		ft_printf("L%d-%s ", (*ant)->ant, next->name);
+		(*ant)->path = (*ant)->path->next;
+		if (!next->is_end)
+			next->ant = 1;
+		now->ant = 0;
+	}
 }
 
-
-void make_move(t_ant **ant, t_list **rooms)
+t_list		*give_path(t_list *paths, int sum, int on_start, int prev)
 {
-    t_list *path;
-    t_room *next;
-    t_room *now;
+	t_list	*min;
 
-    path = (*ant)->path;
-    if ((*ant)->end)
-        return ;
-    now = path->content;
-    next = path->next->content;
-    if (next->is_end)
-        (*ant)->end = 1;
-    if (!next->ant)
-    {
-        ft_printf("L%d-%s ", (*ant)->ant, next->name);
-        (*ant)->path = (*ant)->path->next;
-        if (!next->is_end)
-            next->ant = 1;
-        now->ant = 0;
-    }
+	min = NULL;
+	if (((list_count(paths) - 1) * prev) - sum < on_start)
+		min = paths;
+	return (min);
 }
 
-void print_path(t_list *path)
+int			all_with_paths(t_list **ants)
 {
-    t_room *room;
-    while (path)
-    {
-        room = path->content;
-        ft_printf("%s ", room->name);
-        path = path->next;
-    }
-    ft_printf("\n");
+	t_list	*crawler;
+	t_ant	*ant;
+
+	crawler = *ants;
+	while (crawler)
+	{
+		ant = crawler->content;
+		if (!ant->path)
+			return (0);
+		crawler = crawler->next;
+	}
+	return (1);
 }
 
-t_list *give_path(t_list *paths, int sum, int on_start, int prev)
+void		give_paths(t_list **ants, t_list *paths, int on_start)
 {
-    t_list *min;
+	t_list	*tmp;
+	t_list	*crawler;
+	t_ant	*ant;
+	int		sum;
+	int		prev;
 
-    min = NULL;
-    if (((list_count(paths) - 1) * prev) - sum < on_start)
-        min = paths;
-    return (min);
+	tmp = NULL;
+	crawler = NULL;
+	while (!all_with_paths(ants))
+	{
+		if (!tmp)
+			refresh(&tmp, &sum, &prev, &paths);
+		if (!crawler)
+			crawler = *ants;
+		ant = crawler->content;
+		sum += list_count(tmp->content);
+		prev++;
+		ant->path = give_path(tmp->content, sum, on_start, prev);
+		if (ant->path)
+		{
+			on_start--;
+			crawler = crawler->next;
+		}
+		tmp = tmp->next;
+	}
 }
 
-int     all_with_paths(t_list **ants)
+void		move(t_list **rooms, t_list *ants, t_list *paths, int num_of_ants)
 {
-    t_list *crawler;
-    t_ant *ant;
+	t_ant	*ant;
+	t_list	*tmp;
+	int		count;
 
-    crawler = *ants;
-    while (crawler)
-    {
-        ant = crawler->content;
-        if (!ant->path)
-            return (0);
-        crawler = crawler->next;
-    }
-    return (1);
-}
-
-void    give_paths(t_list **ants, t_list *paths)
-{
-    t_list *tmp;
-    t_list *crawler;
-    t_ant *ant;
-    int sum;
-    int prev;
-    int on_start = list_count(*ants);
-
-    tmp = paths;
-    sum = 0;
-    prev = 0;
-    crawler = NULL;
-    while (!all_with_paths(ants))
-    {
-        if (!crawler)
-            crawler = *ants;
-        ant = crawler->content;
-        sum += list_count(tmp->content);
-        prev++;
-        ant->path = give_path(tmp->content, sum, on_start, prev);
-        if (ant->path)
-        {
-            on_start--;
-            crawler = crawler->next;
-        }
-        tmp = tmp->next;
-
-        if (!tmp)
-        {
-            tmp = paths;
-            sum = 0;
-            prev = 0;
-        }
-    }
-}
-
-void    move(t_list **rooms, t_list *ants, t_list *paths)
-{
-    t_ant *ant;
-    t_list *tmp;
-    int count;
-
-    give_paths(&ants, paths);
-    count = 0;
-    while (!all_at_end(ants))
-    {
-        tmp = ants;
-        while (tmp)
-        {
-            ant = tmp->content;
-            make_move(&ant, rooms);
-            tmp = tmp->next;
-        }
-        ft_printf("\n");
-        count++;
-    }
-    ft_printf("%d number of lines", count);
+	give_paths(&ants, paths, num_of_ants);
+	count = 0;
+	while (!all_at_end(ants))
+	{
+		tmp = ants;
+		while (tmp)
+		{
+			ant = tmp->content;
+			make_move(&ant, rooms);
+			tmp = tmp->next;
+		}
+		ft_printf("\n");
+		count++;
+	}
+	ft_printf("%d number of lines", count);
 }

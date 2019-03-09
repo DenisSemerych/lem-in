@@ -16,27 +16,11 @@ stdlib.h
 errno.h
 -
 
-/Users/dsemeryc/work/algorithm.c
-lem_in.h
-/Users/dsemeryc/work/lem_in.h
-
 /Users/dsemeryc/work/lem_in.h
 printf.h
 /Users/dsemeryc/work/printf.h
 libft.h
 /Users/dsemeryc/work/libft.h
-
-/Users/dsemeryc/work/lists_creation.c
-lem_in.h
-/Users/dsemeryc/work/lem_in.h
-
-/Users/dsemeryc/work/main.c
-lem_in.h
-/Users/dsemeryc/work/lem_in.h
-
-/Users/dsemeryc/work/memory_cleaning.c
-lem_in.h
-/Users/dsemeryc/work/lem_in.h
 
 /Users/dsemeryc/work/moving_ants.c
 lem_in.h
@@ -48,13 +32,5 @@ stdarg.h
 libft.h
 /Users/dsemeryc/work/libft.h
 
-/Users/dsemeryc/work/queue_functions.c
-lem_in.h
-/Users/dsemeryc/work/lem_in.h
-
-/Users/dsemeryc/work/validation.c
-lem_in.h
-/Users/dsemeryc/work/lem_in.h
-stdio.h
--
+/Users/dsemeryc/work/unusefull.c
 

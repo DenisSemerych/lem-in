@@ -1032,18 +1032,18 @@ CMakeFiles/libft.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/work/main.c -o CMakeFiles/libft.dir/main.c.s
 
-CMakeFiles/libft.dir/matrix_creation.c.o: CMakeFiles/libft.dir/flags.make
-CMakeFiles/libft.dir/matrix_creation.c.o: ../matrix_creation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/libft.dir/matrix_creation.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/matrix_creation.c.o   -c /Users/dsemeryc/work/matrix_creation.c
+CMakeFiles/libft.dir/unusefull.c.o: CMakeFiles/libft.dir/flags.make
+CMakeFiles/libft.dir/unusefull.c.o: ../unusefull.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/libft.dir/unusefull.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/unusefull.c.o   -c /Users/dsemeryc/work/unusefull.c
 
-CMakeFiles/libft.dir/matrix_creation.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/matrix_creation.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/work/matrix_creation.c > CMakeFiles/libft.dir/matrix_creation.c.i
+CMakeFiles/libft.dir/unusefull.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/unusefull.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/work/unusefull.c > CMakeFiles/libft.dir/unusefull.c.i
 
-CMakeFiles/libft.dir/matrix_creation.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/matrix_creation.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/work/matrix_creation.c -o CMakeFiles/libft.dir/matrix_creation.c.s
+CMakeFiles/libft.dir/unusefull.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/unusefull.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/work/unusefull.c -o CMakeFiles/libft.dir/unusefull.c.s
 
 CMakeFiles/libft.dir/print_float.c.o: CMakeFiles/libft.dir/flags.make
 CMakeFiles/libft.dir/print_float.c.o: ../print_float.c
@@ -1188,6 +1188,19 @@ CMakeFiles/libft.dir/memory_cleaning.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/memory_cleaning.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/work/memory_cleaning.c -o CMakeFiles/libft.dir/memory_cleaning.c.s
 
+CMakeFiles/libft.dir/extra.c.o: CMakeFiles/libft.dir/flags.make
+CMakeFiles/libft.dir/extra.c.o: ../extra.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dsemeryc/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/libft.dir/extra.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/extra.c.o   -c /Users/dsemeryc/work/extra.c
+
+CMakeFiles/libft.dir/extra.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/extra.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dsemeryc/work/extra.c > CMakeFiles/libft.dir/extra.c.i
+
+CMakeFiles/libft.dir/extra.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/extra.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dsemeryc/work/extra.c -o CMakeFiles/libft.dir/extra.c.s
+
 # Object files for target libft
 libft_OBJECTS = \
 "CMakeFiles/libft.dir/libft/ft_atoi.c.o" \
@@ -1265,7 +1278,7 @@ libft_OBJECTS = \
 "CMakeFiles/libft.dir/itoa_base_ull.c.o" \
 "CMakeFiles/libft.dir/lists_creation.c.o" \
 "CMakeFiles/libft.dir/main.c.o" \
-"CMakeFiles/libft.dir/matrix_creation.c.o" \
+"CMakeFiles/libft.dir/unusefull.c.o" \
 "CMakeFiles/libft.dir/print_float.c.o" \
 "CMakeFiles/libft.dir/print_float_add.c.o" \
 "CMakeFiles/libft.dir/print_int.c.o" \
@@ -1276,7 +1289,8 @@ libft_OBJECTS = \
 "CMakeFiles/libft.dir/stack_func_2.c.o" \
 "CMakeFiles/libft.dir/validation.c.o" \
 "CMakeFiles/libft.dir/moving_ants.c.o" \
-"CMakeFiles/libft.dir/memory_cleaning.c.o"
+"CMakeFiles/libft.dir/memory_cleaning.c.o" \
+"CMakeFiles/libft.dir/extra.c.o"
 
 # External object files for target libft
 libft_EXTERNAL_OBJECTS =
@@ -1356,7 +1370,7 @@ libft: CMakeFiles/libft.dir/itoa_base_long.c.o
 libft: CMakeFiles/libft.dir/itoa_base_ull.c.o
 libft: CMakeFiles/libft.dir/lists_creation.c.o
 libft: CMakeFiles/libft.dir/main.c.o
-libft: CMakeFiles/libft.dir/matrix_creation.c.o
+libft: CMakeFiles/libft.dir/unusefull.c.o
 libft: CMakeFiles/libft.dir/print_float.c.o
 libft: CMakeFiles/libft.dir/print_float_add.c.o
 libft: CMakeFiles/libft.dir/print_int.c.o
@@ -1368,9 +1382,10 @@ libft: CMakeFiles/libft.dir/stack_func_2.c.o
 libft: CMakeFiles/libft.dir/validation.c.o
 libft: CMakeFiles/libft.dir/moving_ants.c.o
 libft: CMakeFiles/libft.dir/memory_cleaning.c.o
+libft: CMakeFiles/libft.dir/extra.c.o
 libft: CMakeFiles/libft.dir/build.make
 libft: CMakeFiles/libft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dsemeryc/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking C executable libft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dsemeryc/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking C executable libft"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libft.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

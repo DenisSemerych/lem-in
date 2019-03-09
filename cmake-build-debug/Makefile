@@ -177,6 +177,33 @@ algorithm.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/algorithm.c.s
 .PHONY : algorithm.c.s
 
+extra.o: extra.c.o
+
+.PHONY : extra.o
+
+# target to build an object file
+extra.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/extra.c.o
+.PHONY : extra.c.o
+
+extra.i: extra.c.i
+
+.PHONY : extra.i
+
+# target to preprocess a source file
+extra.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/extra.c.i
+.PHONY : extra.c.i
+
+extra.s: extra.c.s
+
+.PHONY : extra.s
+
+# target to generate assembly for a file
+extra.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/extra.c.s
+.PHONY : extra.c.s
+
 formating.o: formating.c.o
 
 .PHONY : formating.o
@@ -2148,33 +2175,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/main.c.s
 .PHONY : main.c.s
 
-matrix_creation.o: matrix_creation.c.o
-
-.PHONY : matrix_creation.o
-
-# target to build an object file
-matrix_creation.c.o:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/matrix_creation.c.o
-.PHONY : matrix_creation.c.o
-
-matrix_creation.i: matrix_creation.c.i
-
-.PHONY : matrix_creation.i
-
-# target to preprocess a source file
-matrix_creation.c.i:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/matrix_creation.c.i
-.PHONY : matrix_creation.c.i
-
-matrix_creation.s: matrix_creation.c.s
-
-.PHONY : matrix_creation.s
-
-# target to generate assembly for a file
-matrix_creation.c.s:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/matrix_creation.c.s
-.PHONY : matrix_creation.c.s
-
 memory_cleaning.o: memory_cleaning.c.o
 
 .PHONY : memory_cleaning.o
@@ -2445,6 +2445,33 @@ stack_func_2.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/stack_func_2.c.s
 .PHONY : stack_func_2.c.s
 
+unusefull.o: unusefull.c.o
+
+.PHONY : unusefull.o
+
+# target to build an object file
+unusefull.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/unusefull.c.o
+.PHONY : unusefull.c.o
+
+unusefull.i: unusefull.c.i
+
+.PHONY : unusefull.i
+
+# target to preprocess a source file
+unusefull.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/unusefull.c.i
+.PHONY : unusefull.c.i
+
+unusefull.s: unusefull.c.s
+
+.PHONY : unusefull.s
+
+# target to generate assembly for a file
+unusefull.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/unusefull.c.s
+.PHONY : unusefull.c.s
+
 validation.o: validation.c.o
 
 .PHONY : validation.o
@@ -2487,6 +2514,9 @@ help:
 	@echo "... algorithm.o"
 	@echo "... algorithm.i"
 	@echo "... algorithm.s"
+	@echo "... extra.o"
+	@echo "... extra.i"
+	@echo "... extra.s"
 	@echo "... formating.o"
 	@echo "... formating.i"
 	@echo "... formating.s"
@@ -2706,9 +2736,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... matrix_creation.o"
-	@echo "... matrix_creation.i"
-	@echo "... matrix_creation.s"
 	@echo "... memory_cleaning.o"
 	@echo "... memory_cleaning.i"
 	@echo "... memory_cleaning.s"
@@ -2739,6 +2766,9 @@ help:
 	@echo "... stack_func_2.o"
 	@echo "... stack_func_2.i"
 	@echo "... stack_func_2.s"
+	@echo "... unusefull.o"
+	@echo "... unusefull.i"
+	@echo "... unusefull.s"
 	@echo "... validation.o"
 	@echo "... validation.i"
 	@echo "... validation.s"

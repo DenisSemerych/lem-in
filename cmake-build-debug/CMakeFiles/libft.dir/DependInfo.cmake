@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/dsemeryc/work/add_func.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/add_func.c.o"
   "/Users/dsemeryc/work/algorithm.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/algorithm.c.o"
+  "/Users/dsemeryc/work/extra.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/extra.c.o"
   "/Users/dsemeryc/work/formating.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/formating.c.o"
   "/Users/dsemeryc/work/formating_2.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/formating_2.c.o"
   "/Users/dsemeryc/work/ft_itoa_int128.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/ft_itoa_int128.c.o"
@@ -79,7 +80,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dsemeryc/work/libft/get_next_line.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/libft/get_next_line.c.o"
   "/Users/dsemeryc/work/lists_creation.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/lists_creation.c.o"
   "/Users/dsemeryc/work/main.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/main.c.o"
-  "/Users/dsemeryc/work/matrix_creation.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/matrix_creation.c.o"
   "/Users/dsemeryc/work/memory_cleaning.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/memory_cleaning.c.o"
   "/Users/dsemeryc/work/moving_ants.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/moving_ants.c.o"
   "/Users/dsemeryc/work/print_float.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/print_float.c.o"
@@ -90,6 +90,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dsemeryc/work/service_functions2.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/service_functions2.c.o"
   "/Users/dsemeryc/work/stack_func.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/stack_func.c.o"
   "/Users/dsemeryc/work/stack_func_2.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/stack_func_2.c.o"
+  "/Users/dsemeryc/work/unusefull.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/unusefull.c.o"
   "/Users/dsemeryc/work/validation.c" "/Users/dsemeryc/work/cmake-build-debug/CMakeFiles/libft.dir/validation.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

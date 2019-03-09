@@ -246,3 +246,54 @@
 //        ants = ants->next;
 //    }
 //}
+//t_room *reverse_hash_function(int index, t_list *hash_table)
+//{
+//    while(hash_table)
+//    {
+//        if (hash_table->content_size == index)
+//            return ((t_room *)hash_table->content);
+//        hash_table = hash_table->next;
+//    }
+//    put_err_msg_exit("Error: something went wrong while working with reverse hash-function");
+//    return (NULL);
+//}
+
+//void del_last(t_list **head)
+//{
+//    t_list *crawler;
+//
+//    crawler = *head;
+//    while(crawler && crawler->next && crawler->next->next)
+//        crawler = crawler->next;
+//    crawler && crawler->next ? (crawler->next = NULL) :
+//    (*head = NULL);
+//}
+//void		print_path(t_list *path)
+//{
+//    t_room	*room;
+//
+//    while (path)
+//    {
+//        room = path->content;
+//        ft_printf("%s ", room->name);
+//        path = path->next;
+//    }
+//    ft_printf("\n");
+//}
+
+//double count_ef(t_list *paths, int num_of_ants)
+//{
+//    int lenght;
+//    int num_of_paths;
+//
+//    num_of_paths = list_count(paths);
+//    lenght = 0;
+//    if (!paths)
+//        return (42424242);
+//    while(paths)
+//    {
+//        lenght += list_count((t_list *)paths->content);
+//        paths = paths->next;
+//    }
+//    return (num_of_ants / (lenght / num_of_paths));
+//}

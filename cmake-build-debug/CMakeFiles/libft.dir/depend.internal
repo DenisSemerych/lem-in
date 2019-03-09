@@ -9,6 +9,11 @@ CMakeFiles/libft.dir/algorithm.c.o
  /Users/dsemeryc/work/algorithm.c
  /Users/dsemeryc/work/lem_in.h
  /Users/dsemeryc/work/printf.h
+CMakeFiles/libft.dir/extra.c.o
+ ../includes/libft.h
+ /Users/dsemeryc/work/extra.c
+ /Users/dsemeryc/work/lem_in.h
+ /Users/dsemeryc/work/printf.h
 CMakeFiles/libft.dir/formating.c.o
  /Users/dsemeryc/work/formating.c
  /Users/dsemeryc/work/includes/libft.h
@@ -239,8 +244,6 @@ CMakeFiles/libft.dir/main.c.o
  /Users/dsemeryc/work/lem_in.h
  /Users/dsemeryc/work/main.c
  /Users/dsemeryc/work/printf.h
-CMakeFiles/libft.dir/matrix_creation.c.o
- /Users/dsemeryc/work/matrix_creation.c
 CMakeFiles/libft.dir/memory_cleaning.c.o
  ../includes/libft.h
  /Users/dsemeryc/work/lem_in.h
@@ -284,6 +287,8 @@ CMakeFiles/libft.dir/stack_func_2.c.o
  /Users/dsemeryc/work/includes/libft.h
  /Users/dsemeryc/work/includes/printf.h
  /Users/dsemeryc/work/stack_func_2.c
+CMakeFiles/libft.dir/unusefull.c.o
+ /Users/dsemeryc/work/unusefull.c
 CMakeFiles/libft.dir/validation.c.o
  ../includes/libft.h
  /Users/dsemeryc/work/lem_in.h

@@ -74,7 +74,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/itoa_base_ull.c.o"
   "CMakeFiles/libft.dir/lists_creation.c.o"
   "CMakeFiles/libft.dir/main.c.o"
-  "CMakeFiles/libft.dir/matrix_creation.c.o"
+  "CMakeFiles/libft.dir/unusefull.c.o"
   "CMakeFiles/libft.dir/print_float.c.o"
   "CMakeFiles/libft.dir/print_float_add.c.o"
   "CMakeFiles/libft.dir/print_int.c.o"
@@ -86,6 +86,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/validation.c.o"
   "CMakeFiles/libft.dir/moving_ants.c.o"
   "CMakeFiles/libft.dir/memory_cleaning.c.o"
+  "CMakeFiles/libft.dir/extra.c.o"
   "libft.pdb"
   "libft"
 )
