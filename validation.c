@@ -12,6 +12,19 @@
 
 #include "includes/lem_in.h"
 
+void        check_rooms(t_list *rooms, t_room *to_find)
+{
+    t_room *room;
+
+    while (rooms)
+    {
+        room = rooms->content;
+        if (!ft_strcmp(room->name, to_find->name))
+            put_err_msg_exit("Rooms can`t have same names");
+        rooms = rooms->next;
+    }
+}
+
 t_list		*validate_room(char *str, t_list *head, int start_end)
 {
 	char	**info;
@@ -25,6 +38,7 @@ t_list		*validate_room(char *str, t_list *head, int start_end)
 		put_err_msg_exit("Error: one of the rooms is invalid");
 	room = create_room(info[0],
 			spec_atoi(info[1]), spec_atoi(info[2]), start_end);
+	check_rooms(head, room);
 	new = ft_lstnew(NULL, 0);
 	new->content = room;
 	head = add_to_the_end_of_list(head, new);
@@ -73,27 +87,6 @@ void		validate_link(char *str, t_list **rooms_add)
 	free_str_arr(info, 2);
 }
 
-void        check_rooms(t_list *rooms)
-{
-	t_room	*room;
-	t_room  *to_compare;
-	t_list *tmp;
-
-	while (rooms)
-	{
-		room = (t_room *)rooms->content;
-		tmp = rooms;
-		while (tmp)
-        {
-		    to_compare = tmp->content;
-		    if (to_compare != room && !ft_strcmp(room->name, to_compare->name))
-		        put_err_msg_exit("Rooms can`t have save names");
-		    tmp = tmp->next;
-        }
-		rooms = rooms->next;
-	}
-}
-
 void		validate(t_list *map, int params)
 {
 	int		num_of_ants;
@@ -108,7 +101,6 @@ void		validate(t_list *map, int params)
 	map = map->next;
 	rooms = NULL;
 	add_rooms_and_links(map, &rooms);
-	check_rooms(rooms);
 	if (list_count(rooms) < 2)
 		put_err_msg_exit("You can give start/end command only once");
 	ants = create_ants(num_of_ants);

@@ -12,36 +12,39 @@
 
 #include "includes/lem_in.h"
 
+void 		parsing_map_info(char *map_content, int *commands_num, t_list **rooms, int *start_end)
+{
+	if (!ft_strncmp(map_content, "##start", 7) && ++(*commands_num))
+		*start_end = 1;
+	else if (!ft_strncmp(map_content, "##end", 5) && ++(*commands_num))
+		*start_end = 2;
+	else if (!ft_strncmp(map_content, "##", 2))
+		;
+	else if (ft_strchr(map_content, '-') && !rooms)
+		put_err_msg_exit("Error: you add a link before adding a room");
+	else if (ft_strchr(map_content, '-') && rooms)
+		validate_link(map_content, rooms);
+	else if (!ft_strncmp(map_content, "#", 1))
+		;
+	else if (*commands_num > 2)
+		put_err_msg_exit("You can pass start/end command only once");
+	else
+	{
+		*rooms = validate_room(map_content, *rooms, *start_end);
+		*start_end ? (*start_end = 0) : *start_end;
+	}
+}
+
 void		add_rooms_and_links(t_list *map, t_list **rooms)
 {
 	int		start_end;
-	int 	counter_start;
-	int 	counter_end;
+	int 	commands_num;
 
 	start_end = 0;
-	counter_start = 0;
-	counter_end = 0;
+	commands_num = 0;
 	while (map)
 	{
-		if (!ft_strncmp(map->content, "##start", 7) && ++counter_start)
-			start_end = 1;
-		else if (!ft_strncmp(map->content, "##end", 5) && ++counter_end)
-			start_end = 2;
-		else if (!ft_strncmp(map->content, "##", 2))
-			;
-		else if (ft_strchr(map->content, '-') && !rooms)
-			put_err_msg_exit("Error: you add a link before adding a room");
-		else if (ft_strchr(map->content, '-') && rooms)
-			validate_link(map->content, rooms);
-		else if (!ft_strncmp(map->content, "#", 1))
-			;
-		else if (counter_end > 1 || counter_start > 1)
-			put_err_msg_exit("You can pass start/end command only once");
-		else
-		{
-			*rooms = validate_room(map->content, *rooms, start_end);
-			start_end ? (start_end = 0) : start_end;
-		}
+		parsing_map_info(map->content, &commands_num, rooms, &start_end);
 		map = map->next;
 	}
 }

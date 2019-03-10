@@ -1,3 +1,3 @@
-/Users/dsemeryc/projects/lem_in/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/dsemeryc/projects/lem_in/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/dsemeryc/projects/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir
+/Users/denissemerych/lem_in/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/denissemerych/lem_in/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/denissemerych/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir
