@@ -6,13 +6,13 @@
 /*   By: dsemeryc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/09 20:18:59 by dsemeryc          #+#    #+#             */
-/*   Updated: 2019/03/09 21:29:58 by dsemeryc         ###   ########.fr       */
+/*   Updated: 2019/03/10 16:26:03 by dsemeryc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "includes/lem_in.h"
 
-void		make_move(t_ant **ant, t_list **rooms)
+void		make_move(t_ant **ant)
 {
 	t_list *path;
 	t_room *next;
@@ -90,7 +90,7 @@ void		give_paths(t_list **ants, t_list *paths, int on_start)
 	}
 }
 
-void		move(t_list **rooms, t_list *ants, t_list *paths, int num_of_ants)
+int			move(t_list *ants, t_list *paths, int num_of_ants)
 {
 	t_ant	*ant;
 	t_list	*tmp;
@@ -104,11 +104,11 @@ void		move(t_list **rooms, t_list *ants, t_list *paths, int num_of_ants)
 		while (tmp)
 		{
 			ant = tmp->content;
-			make_move(&ant, rooms);
+			make_move(&ant);
 			tmp = tmp->next;
 		}
 		ft_printf("\n");
 		count++;
 	}
-	ft_printf("%d number of lines", count);
+	return (count);
 }

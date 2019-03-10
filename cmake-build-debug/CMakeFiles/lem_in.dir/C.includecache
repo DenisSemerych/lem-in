@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/dsemeryc/projects/lem_in/includes/lem_in.h
+printf.h
+/Users/dsemeryc/projects/lem_in/includes/printf.h
+libft.h
+/Users/dsemeryc/projects/lem_in/includes/libft.h
+
+/Users/dsemeryc/projects/lem_in/includes/libft.h
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+errno.h
+-
+
+/Users/dsemeryc/projects/lem_in/includes/printf.h
+stdarg.h
+-
+libft.h
+/Users/dsemeryc/projects/lem_in/includes/libft.h
+
+/Users/dsemeryc/projects/lem_in/validation.c
+includes/lem_in.h
+/Users/dsemeryc/projects/lem_in/includes/lem_in.h
+

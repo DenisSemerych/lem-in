@@ -6,11 +6,11 @@
 /*   By: dsemeryc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/09 20:49:48 by dsemeryc          #+#    #+#             */
-/*   Updated: 2019/03/09 20:57:24 by dsemeryc         ###   ########.fr       */
+/*   Updated: 2019/03/10 16:04:07 by dsemeryc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "includes/lem_in.h"
 
 void		free_paths(t_list **paths)
 {

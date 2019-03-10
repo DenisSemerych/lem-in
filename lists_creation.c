@@ -6,22 +6,26 @@
 /*   By: dsemeryc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/09 20:13:36 by dsemeryc          #+#    #+#             */
-/*   Updated: 2019/03/09 20:18:43 by dsemeryc         ###   ########.fr       */
+/*   Updated: 2019/03/10 16:03:53 by dsemeryc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "includes/lem_in.h"
 
 void		add_rooms_and_links(t_list *map, t_list **rooms)
 {
 	int		start_end;
+	int 	counter_start;
+	int 	counter_end;
 
 	start_end = 0;
+	counter_start = 0;
+	counter_end = 0;
 	while (map)
 	{
-		if (!ft_strncmp(map->content, "##start", 7))
+		if (!ft_strncmp(map->content, "##start", 7) && ++counter_start)
 			start_end = 1;
-		else if (!ft_strncmp(map->content, "##end", 5))
+		else if (!ft_strncmp(map->content, "##end", 5) && ++counter_end)
 			start_end = 2;
 		else if (!ft_strncmp(map->content, "##", 2))
 			;
@@ -31,6 +35,8 @@ void		add_rooms_and_links(t_list *map, t_list **rooms)
 			validate_link(map->content, rooms);
 		else if (!ft_strncmp(map->content, "#", 1))
 			;
+		else if (counter_end > 1 || counter_start > 1)
+			put_err_msg_exit("You can pass start/end command only once");
 		else
 		{
 			*rooms = validate_room(map->content, *rooms, start_end);
@@ -40,7 +46,7 @@ void		add_rooms_and_links(t_list *map, t_list **rooms)
 	}
 }
 
-t_list		*create_ants(int num_of_ants, t_list *start_room)
+t_list		*create_ants(int num_of_ants)
 {
 	t_list	*head;
 	t_ant	*ant;

@@ -6,13 +6,13 @@
 /*   By: dsemeryc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/09 20:05:34 by dsemeryc          #+#    #+#             */
-/*   Updated: 2019/03/09 20:11:24 by dsemeryc         ###   ########.fr       */
+/*   Updated: 2019/03/10 16:02:17 by dsemeryc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "includes/lem_in.h"
 
-t_list		*algorythm(t_list **rooms)
+t_list		*algorithm(t_list **rooms)
 {
 	t_list	*path;
 	t_list	*tmp_paths;
@@ -22,7 +22,6 @@ t_list		*algorythm(t_list **rooms)
 	while ((path = bfs(rooms)))
 	{
 		tmp_paths = path;
-		print_paths(tmp_paths);
 		solution = add_to_the_end_of_list(solution, tmp_paths);
 		clear_rooms(rooms, solution);
 	}

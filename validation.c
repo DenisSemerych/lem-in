@@ -6,11 +6,11 @@
 /*   By: dsemeryc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/09 20:30:54 by dsemeryc          #+#    #+#             */
-/*   Updated: 2019/03/09 20:48:27 by dsemeryc         ###   ########.fr       */
+/*   Updated: 2019/03/10 16:06:40 by dsemeryc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "includes/lem_in.h"
 
 t_list		*validate_room(char *str, t_list *head, int start_end)
 {
@@ -34,6 +34,8 @@ t_list		*validate_room(char *str, t_list *head, int start_end)
 
 void		set_links(t_room **room_one, t_room **room_two)
 {
+	if ((*room_one)->is_start && (*room_two)->is_end)
+		put_err_msg_exit("You have link from start to end - 1 turn needed");
 	(*room_one)->links =
 		add_to_the_end_of_list((*room_one)->links, ft_lstnew(NULL, 0));
 	last_elem((*room_one)->links)->content = *room_two;
@@ -71,36 +73,28 @@ void		validate_link(char *str, t_list **rooms_add)
 	free_str_arr(info, 2);
 }
 
-t_list		*check_rooms(t_list *rooms)
+void        check_rooms(t_list *rooms)
 {
 	t_room	*room;
-	int		check_start;
-	int		check_end;
-	int		count;
-	t_list	*start;
+	t_room  *to_compare;
+	t_list *tmp;
 
-	check_start = 0;
-	check_end = 0;
-	count = 0;
 	while (rooms)
 	{
 		room = (t_room *)rooms->content;
-		if (room->is_end)
-			check_end += 1;
-		if (room->is_start)
-		{
-			check_start += 1;
-			start = rooms;
-		}
+		tmp = rooms;
+		while (tmp)
+        {
+		    to_compare = tmp->content;
+		    if (to_compare != room && !ft_strcmp(room->name, to_compare->name))
+		        put_err_msg_exit("Rooms can`t have save names");
+		    tmp = tmp->next;
+        }
 		rooms = rooms->next;
-		count++;
 	}
-	if (check_end != 1 || check_start != 1 || count < 2)
-		put_err_msg_exit(ERROR_ROOMS);
-	return (start);
 }
 
-void		validate(t_list *map)
+void		validate(t_list *map, int params)
 {
 	int		num_of_ants;
 	t_list	*ants;
@@ -109,14 +103,19 @@ void		validate(t_list *map)
 	t_list	*to_print;
 
 	to_print = map;
-	if ((num_of_ants = ft_atoi(map->content)) <= 0)
+	if ((num_of_ants = spec_atoi(map->content)) <= 0)
 		put_err_msg_exit("Error: incorrect number of ants");
 	map = map->next;
 	rooms = NULL;
 	add_rooms_and_links(map, &rooms);
-	ants = create_ants(num_of_ants, check_rooms(rooms));
-	paths = algorythm(&rooms);
-	print_map(to_print);
-	move(&rooms, ants, paths, num_of_ants);
+	check_rooms(rooms);
+	if (list_count(rooms) < 2)
+		put_err_msg_exit("You can give start/end command only once");
+	ants = create_ants(num_of_ants);
+	paths = algorithm(&rooms);
+	switch_prarams(params, to_print, paths);
+	num_of_ants = move(ants, paths, num_of_ants);
+	if (params == 4)
+		ft_printf("%s\nWas made %d moves\n%s", GRN, num_of_ants, RESET);
 	clean(&rooms, &ants, &paths);
 }
