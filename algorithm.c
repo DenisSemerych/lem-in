@@ -12,20 +12,76 @@
 
 #include "includes/lem_in.h"
 
-t_list		*algorithm(t_list **rooms)
+double count_ef(t_list *paths, int num_of_ants)
+{
+    int lenght;
+    int num_of_paths;
+
+    num_of_paths = list_count(paths);
+    lenght = 0;
+    if (!paths)
+        return (42424242);
+    while(paths)
+    {
+        lenght += list_count((t_list *)paths->content);
+        paths = paths->next;
+    }
+    return (num_of_ants / (lenght / num_of_paths));
+}
+
+void		find_and_close(t_list *paths)
+{
+	t_list *crawler;
+	t_room *max;
+	int max_count;
+	t_room *room;
+	int count;
+
+	max = NULL;
+	max_count = 0;
+	while (paths)
+	{
+		crawler = paths->content;
+		while (crawler)
+		{
+			room = crawler->content;
+			if ((count = list_count(room->links)) > max_count && !room->is_start && !room->is_end)
+			{
+				max_count = count;
+				max = room;
+			}
+			crawler = crawler->next;
+		}
+		paths = paths->next;
+	}
+	if (max)
+		max->is_closed = 1;
+}
+
+t_list		*algorithm(t_list **rooms, int num_of_ants)
 {
 	t_list	*path;
 	t_list	*tmp_paths;
-	t_list	*solution;
+	t_list	*solution_with_closed;
+	t_list	*solution_without_closed;
 
-	solution = NULL;
+	solution_without_closed = NULL;
 	while ((path = bfs(rooms)))
 	{
 		tmp_paths = path;
-		solution = add_to_the_end_of_list(solution, tmp_paths);
-		clear_rooms(rooms, solution);
+		solution_without_closed = add_to_the_end_of_list(solution_without_closed, tmp_paths);
+		clear_rooms(rooms, solution_without_closed);
 	}
-	return (solution);
+	solution_with_closed = NULL;
+	clear_rooms(rooms, NULL);
+	find_and_close(solution_without_closed);
+	while ((path = bfs(rooms)))
+	{
+		tmp_paths = path;
+		solution_with_closed = add_to_the_end_of_list(solution_with_closed, tmp_paths);
+		clear_rooms(rooms, solution_with_closed);
+	}
+	return (solution_with_closed);
 }
 
 t_list		*give_start_room(t_list **rooms)

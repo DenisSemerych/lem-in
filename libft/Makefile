@@ -6,7 +6,7 @@
 #    By: dsemeryc <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/29 14:13:02 by dsemeryc          #+#    #+#              #
-#    Updated: 2019/03/10 15:36:44 by dsemeryc         ###   ########.fr        #
+#    Updated: 2019/03/11 11:11:42 by dsemeryc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,6 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME) $(LFT_DR)/libft.a
-	@echo "deleted" $(NAME)
+	echo "deleted" $(NAME)
 
 re: fclean all

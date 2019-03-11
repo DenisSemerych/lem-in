@@ -104,7 +104,7 @@ void		validate(t_list *map, int params)
 	if (list_count(rooms) < 2)
 		put_err_msg_exit("You can give start/end command only once");
 	ants = create_ants(num_of_ants);
-	paths = algorithm(&rooms);
+	paths = algorithm(&rooms, num_of_ants);
 	switch_prarams(params, to_print, paths);
 	num_of_ants = move(ants, paths, num_of_ants);
 	if (params == 4)

@@ -51,7 +51,7 @@ t_list				*validate_room(char *str, t_list *head, int start_end);
 void				validate_link(char *str, t_list **rooms);
 int					list_count(t_list *list);
 t_list				*last_elem(t_list *head);
-t_list				*algorithm(t_list **rooms);
+t_list				*algorithm(t_list **rooms, int num_of_ants);
 t_list				*bfs(t_list **rooms);
 void				add_to_queue(t_list **queue, t_room *node, t_list **paths);
 void				clear_rooms(t_list **rooms, t_list *path);

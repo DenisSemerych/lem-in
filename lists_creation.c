@@ -12,12 +12,16 @@
 
 #include "includes/lem_in.h"
 
-void 		parsing_map_info(char *map_content, int *commands_num, t_list **rooms, int *start_end)
+void 		parsing_map_info(char *map_content, unsigned char *commands_num, t_list **rooms, int *start_end)
 {
-	if (!ft_strncmp(map_content, "##start", 7) && ++(*commands_num))
+	if (!ft_strcmp(map_content, "##start") && !(*commands_num & 0b10000000) && (*commands_num = *commands_num | 0b10000000))
 		*start_end = 1;
-	else if (!ft_strncmp(map_content, "##end", 5) && ++(*commands_num))
+	else if (!ft_strcmp(map_content, "##start"))
+		put_err_msg_exit("You can pass start command only once");
+	else if (!ft_strcmp(map_content, "##end") && !(*commands_num & 0b00000000) && (*commands_num = *commands_num | 0b00000001))
 		*start_end = 2;
+	else if (!ft_strcmp(map_content, "##end"))
+		put_err_msg_exit("You can pass end command only once");
 	else if (!ft_strncmp(map_content, "##", 2))
 		;
 	else if (ft_strchr(map_content, '-') && !rooms)
@@ -26,8 +30,6 @@ void 		parsing_map_info(char *map_content, int *commands_num, t_list **rooms, in
 		validate_link(map_content, rooms);
 	else if (!ft_strncmp(map_content, "#", 1))
 		;
-	else if (*commands_num > 2)
-		put_err_msg_exit("You can pass start/end command only once");
 	else
 	{
 		*rooms = validate_room(map_content, *rooms, *start_end);
@@ -38,15 +40,19 @@ void 		parsing_map_info(char *map_content, int *commands_num, t_list **rooms, in
 void		add_rooms_and_links(t_list *map, t_list **rooms)
 {
 	int		start_end;
-	int 	commands_num;
+	unsigned char commands_num;
 
 	start_end = 0;
-	commands_num = 0;
+	commands_num = 0b00000000;
 	while (map)
 	{
 		parsing_map_info(map->content, &commands_num, rooms, &start_end);
 		map = map->next;
 	}
+	if (!(commands_num & 0b10000000))
+		put_err_msg_exit("##start is missing");
+	else if (!(commands_num & 0b00000001))
+		put_err_msg_exit("##end is missing");
 }
 
 t_list		*create_ants(int num_of_ants)
