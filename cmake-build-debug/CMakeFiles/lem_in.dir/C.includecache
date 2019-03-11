@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/dsemeryc/work/algorithm.c
-includes/lem_in.h
-/Users/dsemeryc/work/includes/lem_in.h
-
 /Users/dsemeryc/work/includes/lem_in.h
 printf.h
 /Users/dsemeryc/work/includes/printf.h
@@ -31,4 +27,8 @@ stdarg.h
 -
 libft.h
 /Users/dsemeryc/work/includes/libft.h
+
+/Users/dsemeryc/work/validation.c
+includes/lem_in.h
+/Users/dsemeryc/work/includes/lem_in.h
 

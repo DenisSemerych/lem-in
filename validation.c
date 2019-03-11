@@ -82,7 +82,7 @@ void		validate_link(char *str, t_list **rooms_add)
 		rooms = rooms->next;
 	}
 	if (!room_two || !room_one)
-		put_err_msg_exit("Error: one of the links is invalid");
+		put_err_msg_exit("Error: some links is invalid");
 	set_links(&room_one, &room_two);
 	free_str_arr(info, 2);
 }
