@@ -14,16 +14,18 @@
 
 t_list		*algorithm(t_list **rooms, int num_of_ants)
 {
-	t_list	*path;
+	t_list	*paths;
 	t_list	*tmp_paths;
 	t_list	*solution;
 
 	solution = NULL;
-	while ((path = bfs(rooms)))
+	paths = bfs(rooms);
+	while (paths)
 	{
-		tmp_paths = path;
-		solution = add_to_the_end_of_list(solution_without_closed, tmp_paths);
-		clear_rooms(rooms, solution_without_closed);
+		tmp_paths = paths;
+		solution = add_to_the_end_of_list(solution, tmp_paths);
+		clear_rooms(rooms, solution);
+		paths = paths->next;
 	}
 	return (solution);
 }
