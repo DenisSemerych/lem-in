@@ -6,28 +6,11 @@
 /*   By: dsemeryc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/09 20:05:34 by dsemeryc          #+#    #+#             */
-/*   Updated: 2019/03/10 16:02:17 by dsemeryc         ###   ########.fr       */
+/*   Updated: 2019/03/12 12:31:12 by dsemeryc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/lem_in.h"
-
-double count_ef(t_list *paths, int num_of_ants)
-{
-    int lenght;
-    int num_of_paths;
-
-    num_of_paths = list_count(paths);
-    lenght = 0;
-    if (!paths)
-        return (42424242);
-    while(paths)
-    {
-        lenght += list_count((t_list *)paths->content);
-        paths = paths->next;
-    }
-    return (num_of_ants / (lenght / num_of_paths));
-}
 
 void		find_and_close(t_list *paths)
 {
